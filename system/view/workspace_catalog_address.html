@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+         <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+         <link rel="stylesheet" href="assets/css/bootstrap-glyphicons.css" />
+         <script src="assets/js/jquery.js"></script>
+         <script src="assets/js/bootstrap.js"></script>
+         <script src="assets/js/catalog_address.js"></script>
+         <style>
+             body { padding-top: 70px; }
+         </style>
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top">
+            <a class="navbar-brand" href="?act=main" title="В главное меню"><i class="glyphicon glyphicon-home"></i></a>
+            <a class="navbar-brand" href="#">Адреса</a>
+            <ul class="nav navbar-nav">
+              <li>
+                  <a data-toggle="dropdown" href="?act=edirot_ks">Редакторы</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                      <li><a href="?act=editor_ks_ms">Редактор МС</a></li>
+                      <li><a href="?act=editor_ks_drs">Редактор ДРС</a></li>
+                  </ul>
+              </li>
+              <li class="active">
+                  <a data-toggle="dropdown" href="#">Каталоги</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                      <li><a href="?act=catalog_contractor">Подрядчики</a></li>
+                      <li><a href="?act=catalog_price">Расценки</a></li>
+                      <li class="active"><a href="?act=catalog_address">Адреса</a></li>
+                      <li><a href="?act=catalog_ks">Формы КС</a></li>
+                  </ul>
+              </li>
+            </ul>
+        </div>
+        <!-- -->
+        <div class="container">
+            <h1>Адреса</h1>
+            <div class="row">
+                <div class="col-lg-3">
+                                <div class="input-group">
+                                    <span class="input-group-addon">АТС&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    <select class="form-control" object-name="ats">
+                                        <option value="0">Не выбран</option>
+                                    </select>
+                                  </div><br />
+                                <div class="input-group">
+                                    <span class="input-group-addon">Кластер</span>
+                                    <select class="form-control" object-name="cluster">
+                                        <option value="0">---</option>
+                                    </select>
+                                  </div>
+                                </div>
+            </div><br />
+            <div class="row">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="col-lg-4">Адрес</th>
+                            <th>Информация</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><ul class="nav nav-pills nav-stacked" object-name="address"></ul></td>
+                            <td>
+                                <div class="panel">
+                                    <div class="panel-heading" object-name="address-text">Адрес не указан</div>
+                                    <p><strong>№ Кабеля: </strong> <em object-name="address-cable"></em></p>
+                                    <p><strong>Клиентов: </strong> <em object-name="address-client"></em></p>
+                                    <p><strong>Портов: </strong> <em object-name="address-port"></em></p>
+                                    <p><strong>№ АСРЗ: </strong> <em object-name="address-asrz"></em></p>
+                                    <p><strong>№ ОРШ: </strong> <em object-name="address-оjrsha"></em></p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- -->
+    </body>
+</html>

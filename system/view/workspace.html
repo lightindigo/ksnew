@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <link rel="stylesheet" href="assets/css/bootstrap.css">
+         <script src="assets/js/jquery.js"></script>
+         <script src="assets/js/bootstrap.js"></script>
+         <style>
+             body { padding-top: 70px; }
+         </style>
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top">
+            <a class="navbar-brand" href="?act=">Главное меню</a>
+            <ul class="nav navbar-nav">
+              <li>
+                  <a data-toggle="dropdown" href="?act=edirot_ks">Редакторы</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                      <li><a href="?act=editor_ks_ms">Редактор МС</a></li>
+                      <li><a href="?act=editor_ks_drs">Редактор ДРС</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a data-toggle="dropdown" href="#">Каталоги</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                      <li><a href="?act=catalog_contractor">Подрядчики</a></li>
+                      <li><a href="?act=catalog_price">Расценки</a></li>
+                      <li><a href="?act=catalog_address">Адреса</a></li>
+                      <li><a href="?act=catalog_ks">Формы КС</a></li>
+                  </ul>
+              </li>
+            </ul>
+        </div>
+        <!-- -->
+        <div class="container">
+            <div class="page-header">
+                <h1>Редакторы <small>системы формирования и редактирования форм КС</small></h1>
+            </div>
+            <div class="row">
+                <div class="jumbotron col-lg-5">
+                    <h1>ДРС</h1>
+                    <p>Создание и редактирование форм КС для ДРС</p>
+                    <p><a class="btn btn-primary btn-large" href="?act=editor_ks_drs">Перейти к редактору ДРС</a></p>
+                 </div>
+                <div class="col-lg-1"></div>
+                <div class="jumbotron col-lg-5">
+                    <h1>МС</h1>
+                    <p>Создание и редактирование форм КС для МС</p>
+                    <p><a class="btn btn-primary btn-large" href="?act=editor_ks_ms">Перейти к редактору МС</a></p>
+                  </div>
+            </div>
+            <div class="page-header">
+                <h1>Каталоги <small>системы просмотра и редактирования исходныйх данных</small></h1>
+            </div>
+            <div class="row">
+                <div class="jumbotron col-lg-5">
+                    <h1>Подрядчики</h1>
+                    <p>Система управления подрячиками</p>
+                    <p><a href="?act=catalog_contractor" class="btn btn-primary btn-large">Перейти к каталогу подрядчиков</a></p>
+                 </div>
+                <div class="col-lg-1"></div>
+                <div class="jumbotron col-lg-5">
+                    <h1>Расценки</h1>
+                    <p>Система управления расценками</p>
+                    <p><a href="?act=catalog_price" class="btn btn-primary btn-large">Перейти к каталогу расценок</a></p>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="jumbotron col-lg-5">
+                    <h1>Адреса</h1>
+                    <p>Система управления адресами</p>
+                    <p><a href="?act=catalog_address" class="btn btn-primary btn-large">Перейти к каталогу адресов</a></p>
+                 </div>
+                <div class="col-lg-1"></div>
+                <div class="jumbotron col-lg-5">
+                    <h1>Формы КС</h1>
+                    <p>Система управления формами КС</p>
+                    <p><a href="?act=catalog_ks" class="btn btn-primary btn-large">Перейти к каталогу форм КС</a></p>
+                  </div>
+            </div>
+        </div>
+        <!-- -->
+    </body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>КС</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Rasuasor">
+        <meta name="author" content="Alexandr Rasuasor">
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/bootstrap.js"></script>
+        <script src="assets/js/engine_cat.js"></script>
+    </head>
+    <body>
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="brand" href="/">КС</a>
+                    <ul class="nav nav-tabs">
+                        <li>
+                          <a href="?act=editor">Редактор</a>
+                        </li>
+                        <li  class="active">
+                          <a href="?act=catalog">Каталог</a>
+                        </li>
+                    </ul>
+                    <ul class="nav pull-right">
+                        <li class="divider-vertical"></li>
+                        <li><a href="#version" title="Версия"><i class="icon-info-sign"></i> V1.4.2.5 .beta</a></li>
+                        <li class="divider-vertical"></li>
+                    </ul>
+                </div>
+            </div>
+	</div>
+	<div class="container">
+            <div>&nbsp;</div>
+            <div class="tabbable"> <!-- Only required for left/right tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#tab1" data-toggle="tab">Подрядчики</a></li>
+                  <li><a href="#tab2" data-toggle="tab">Расценки</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tab1">
+                    <!-- -->
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Наименование <a href="#c_append" class="pull-right" data-toggle="new_contractor" title="Создать новго подрядчика"><i class="icon-plus"></i></a></th>
+                                <th>Полная информация <a href="#c_append" class="pull-right" data-toggle="edit_contractor" title="Редактировать информацию о подрядчике"><i class="icon-pencil"></i></a></th>
+                            </tr>
+                        </thead>
+                        <tbody id="frm_contractor_placeholder">
+                            <tr>
+                                <td>
+                                    <ul class="nav nav-pills nav-stacked"></ul>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- -->
+                  </div>
+                  <div class="tab-pane" id="tab2">
+                    <!-- -->
+                     <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Название<a href="#c_append" class="pull-right" data-toggle="modal_new_price" title="Создать новую расценку"><i class="icon-plus"></i></a></th>
+                                <th>Виды работ</th>
+                            </tr>
+                        </thead>
+                        <tbody id="frm_price_placeholder">
+                            <tr>
+                                <td>
+                                    <ul class="nav nav-pills nav-stacked"></ul>
+                                </td>
+                                <td>
+                                    <table class="table table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>№</th>
+                                                <th>Наименование</th>
+                                                <th class="span1">Цена</th>
+                                                <th width="10"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- -->
+                  </div>
+                </div>
+              </div>
+            <hr />
+            <div class="container-fluid of">
+	</div>
+	<!-- MODAL -->
+	<div class="modal hide fade" id="modal_window">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h3 id="windowTitle">Modal header</h3>
+            </div>
+            <div class="modal-body" id="windowsContent">
+                <p>One fine body…</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn" onclick="$('#modal_window').modal('hide')">Закрыть</a>
+		<span id="windowBtn"></span>
+            </div>
+	</div>
+        <!-- MODAL EDIT CONTRACTOR -->
+	<div class="modal hide fade" id="modal_edit_contractor">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h3>Редактирование подрядчика</h3>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" data-item-id="id" value="" />
+                <table class="table table-bordered">
+                      <tr><td class="span3" style="font-weight: bold;">Наименование:</td><td>
+                      <input type="text" maxlength="255" data-item-id="name" /></td>
+                      </tr><tr><td style="font-weight: bold;">Сертификат соответствия ИСО:</td><td>
+                        <input type="text" maxlength="255" data-item-id="cciso" /></td>
+                      </tr><tr><td style="font-weight: bold;">Разрешение ИСО:</td><td>
+                        <input type="text" maxlength="255" data-item-id="riso" /></td>
+                      </tr><tr><td style="font-weight: bold;">СРО Свидетельство о допуске:</td><td>
+                        <input type="text" maxlength="255" data-item-id="sroca" /></td>
+                      </tr><tr><td style="font-weight: bold;">СРО Свидетельство о членстве:</td><td>
+                        <input type="text" maxlength="255" data-item-id="srocm" /></td>
+                      </tr><tr><td style="font-weight: bold;">Генеральный директор:</td><td>
+                        <input type="text" maxlength="255" data-item-id="director" /></td>
+                      </tr><tr><td style="font-weight: bold;">Главный бухгалтер:</td><td>
+                        <input type="text" maxlength="255" data-item-id="accountant" /></td>
+                      </tr><tr><td style="font-weight: bold;">Юридический адрес:</td><td>
+                        <input type="text" maxlength="255" data-item-id="legal_address" /></td>
+                      </tr><tr><td style="font-weight: bold;">Фактический адрес:</td><td>
+                        <input type="text" maxlength="255" data-item-id="actual_address" /></td>
+                      </tr><tr><td style="font-weight: bold;">Почтовый адрес:</td><td>
+                        <input type="text" maxlength="255" data-item-id="postal_address" /></td>
+                      </tr><tr><td style="font-weight: bold;">ИНН/КПП:</td><td>
+                        <input type="text" maxlength="255" data-item-id="inn_kpp" /></td>
+                      </tr><tr><td style="font-weight: bold;">ОГРН:</td><td>
+                        <input type="text" maxlength="255" data-item-id="ogrn" /></td>
+                      </tr><tr><td style="font-weight: bold;">ОКПО/ОКВЭД:</td><td>
+                        <input type="text" maxlength="255" data-item-id="okpo_okvd" /></td>
+                      </tr><tr><td style="font-weight: bold;">Р/с:</td><td>
+                        <input type="text" maxlength="255" data-item-id="r_s" /></td>
+                      </tr><tr><td style="font-weight: bold;">в:</td><td>
+                        <input type="text" maxlength="255" data-item-id="in" /></td>
+                      </tr><tr><td style="font-weight: bold;">К/с:</td><td>
+                        <input type="text" maxlength="255" data-item-id="k_s" /></td>
+                      </tr><tr><td style="font-weight: bold;">ОКУД:</td><td>
+                        <input type="text" maxlength="255" data-item-id="okyd" /></td>
+                      </tr><tr><td style="font-weight: bold;">БИК:</td><td>
+                        <input type="text" maxlength="255" data-item-id="bik" /></td>
+                      </tr><tr><td style="font-weight: bold;">Тел./факс:</td><td>
+                        <input type="text" maxlength="255" data-item-id="phone_fax" /></td>
+                      </tr><tr><td style="font-weight: bold;">E-mail:</td><td>
+                        <input type="text" maxlength="255" data-item-id="mail" /></td></tr>
+                      <tr><td colspan="2"><button class="btn btn-success btn-block" data-toggle="edit_contactor_save">Сохранить</button></td></tr>
+                        </table>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn" onclick="$('#modal_edit_contractor').modal('hide')">Закрыть</a>
+            </div>
+	</div>
+        <!-- MODAL EDIT CONTRACTOR -->
+	<div class="modal hide fade" id="modal_new_contractor">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h3>Навый подрядчик</h3>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered">
+                      <tr><td class="span3" style="font-weight: bold;">Наименование:</td><td>
+                      <input type="text" maxlength="255" data-item-id="name" /></td>
+                      </tr><tr><td style="font-weight: bold;">Сертификат соответствия ИСО:</td><td>
+                        <input type="text" maxlength="255" data-item-id="cciso" /></td>
+                      </tr><tr><td style="font-weight: bold;">Разрешение ИСО:</td><td>
+                        <input type="text" maxlength="255" data-item-id="riso" /></td>
+                      </tr><tr><td style="font-weight: bold;">СРО Свидетельство о допуске:</td><td>
+                        <input type="text" maxlength="255" data-item-id="sroca" /></td>
+                      </tr><tr><td style="font-weight: bold;">СРО Свидетельство о членстве:</td><td>
+                        <input type="text" maxlength="255" data-item-id="srocm" /></td>
+                      </tr><tr><td style="font-weight: bold;">Подписчик:</td><td>
+                        <input type="text" maxlength="255" data-item-id="director" /></td>
+                      </tr><tr><td style="font-weight: bold;">Главный бухгалтер:</td><td>
+                        <input type="text" maxlength="255" data-item-id="accountant" /></td>
+                      </tr><tr><td style="font-weight: bold;">Юридический адрес:</td><td>
+                        <input type="text" maxlength="255" data-item-id="legal_address" /></td>
+                      </tr><tr><td style="font-weight: bold;">Фактический адрес:</td><td>
+                        <input type="text" maxlength="255" data-item-id="actual_address" /></td>
+                      </tr><tr><td style="font-weight: bold;">Почтовый адрес:</td><td>
+                        <input type="text" maxlength="255" data-item-id="postal_address" /></td>
+                      </tr><tr><td style="font-weight: bold;">ИНН/КПП:</td><td>
+                        <input type="text" maxlength="255" data-item-id="inn_kpp" /></td>
+                      </tr><tr><td style="font-weight: bold;">ОГРН:</td><td>
+                        <input type="text" maxlength="255" data-item-id="ogrn" /></td>
+                      </tr><tr><td style="font-weight: bold;">ОКПО/ОКВЭД:</td><td>
+                        <input type="text" maxlength="255" data-item-id="okpo_okvd" /></td>
+                      </tr><tr><td style="font-weight: bold;">Р/с:</td><td>
+                        <input type="text" maxlength="255" data-item-id="r_s" /></td>
+                      </tr><tr><td style="font-weight: bold;">в:</td><td>
+                        <input type="text" maxlength="255" data-item-id="in" /></td>
+                      </tr><tr><td style="font-weight: bold;">К/с:</td><td>
+                        <input type="text" maxlength="255" data-item-id="k_s" /></td>
+                      </tr><tr><td style="font-weight: bold;">БИК:</td><td>
+                        <input type="text" maxlength="255" data-item-id="bik" /></td>
+                      </tr><tr><td style="font-weight: bold;">ОКУД:</td><td>
+                        <input type="text" maxlength="255" data-item-id="okyd" /></td>
+                      </tr><tr><td style="font-weight: bold;">Тел./факс:</td><td>
+                        <input type="text" maxlength="255" data-item-id="phone_fax" /></td>
+                      </tr><tr><td style="font-weight: bold;">E-mail:</td><td>
+                        <input type="text" maxlength="255" data-item-id="mail" /></td></tr>
+                      <tr><td colspan="2"><button class="btn btn-success btn-block" data-toggle="new_contactor_save">Создать</button></td></tr>
+                        </table>
+              
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn" onclick="$('#modal_new_contractor').modal('hide')">Закрыть</a>
+            </div>
+        </div>
+        <!-- MODAL NEW PRICE -->
+	<div class="modal hide fade" id="modal_new_price">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h3>Новая расценка</h3>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered">
+                      <tr><td class="span3" style="font-weight: bold;">Наименование:</td><td>
+                      <input type="text" maxlength="255" data-item-id="price_name" /></td>
+                      </tr><tr><td style="font-weight: bold;">№ договора:</td><td>
+                        <input type="text" maxlength="255" data-item-id="price_contract" /></td>
+                      </tr><tr><td style="font-weight: bold;">Дата договора:</td><td>
+                        <input type="date" data-item-id="price_contract_date" /></td>
+                      </tr><tr><td style="font-weight: bold;">№ доп. соглашения:</td><td>
+                        <input type="text" maxlength="255" data-item-id="price_accord" /></td>
+                      </tr><tr><td style="font-weight: bold;">Дата доп. соглашения:</td><td>
+                        <input type="date"  data-item-id="price_accord_date" /></td>
+                      </tr><tr><td style="font-weight: bold;">Заказчик:</td><td>
+                              <select data-item-id="price_customer"></select></td>
+                      </tr><tr><td style="font-weight: bold;">Подрядчик:</td><td>
+                        <select data-item-id="price_contractor"></select></td>
+                      </tr><tr><td style="font-weight: bold;">тип:</td><td>
+                        <select data-item-id="price_type">
+                            <option>---</option>
+                            <option value="ms">МС</option>
+                            <option value="drs">ДРС</option>
+                        </select></td>
+                      <tr><td colspan="2"><button class="btn btn-success btn-block" data-toggle="modal_new_price">Сохранить</button></td></tr>
+                        </table>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn" onclick="$('#modal_new_price').modal('hide')">Закрыть</a>
+            </div>
+	</div>
+	</div>
+    </body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+         <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+         <link rel="stylesheet" href="assets/css/bootstrap-glyphicons.css" />
+         <script src="assets/js/jquery.js"></script>
+         <script src="assets/js/bootstrap.js"></script>
+         <script src="assets/js/catalog_price.js"></script>
+         <style>
+             body { padding-top: 70px; }
+             .optWid
+             {
+                 width:200px;
+             }
+
+         </style>
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top">
+            <a class="navbar-brand" href="?act=main" title="В главное меню"><i class="glyphicon glyphicon-home"></i></a>
+            <a class="navbar-brand" href="#">Расценки</a>
+            <ul class="nav navbar-nav">
+              <li>
+                  <a data-toggle="dropdown" href="?act=edirot_ks">Редакторы</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                      <li><a href="?act=editor_ks_ms">Редактор МС</a></li>
+                      <li><a href="?act=editor_ks_drs">Редактор ДРС</a></li>
+                  </ul>
+              </li>
+              <li class="active">
+                  <a data-toggle="dropdown" href="#">Каталоги</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                      <li><a href="?act=catalog_contractor">Подрядчики</a></li>
+                      <li class="active"><a href="?act=catalog_price">Расценки</a></li>
+                      <li><a href="?act=catalog_address">Адреса</a></li>
+                      <li><a href="?act=catalog_ks">Формы КС</a></li>
+                  </ul>
+              </li>
+            </ul>
+        </div>
+        <!-- -->
+        <div class="container">
+            <h1>Расценки</h1>
+            <div class="row">
+                <div class="col-lg-4">
+                    <p style="text-align: right;">
+                        <button class="btn btn-success" onclick="newPrice()">Создать расценку</button>
+                    </p>
+                    <div class="list-group" object-name="price-list">
+                        <a href="#" class="list-group-item" data-toggle="tab">
+                          <h4 class="list-group-item-heading">Загрузка...</h4>
+                          <p class="list-group-item-text">Пожалуйста подождите</p>
+                        </a>
+                      </div>
+                </div>
+                <div class="col-lg-7">
+                    <!-- -->
+                    <ul class="nav nav-tabs" id="myTab">
+                        <li class="active"><a href="#info" data-toggle="tab">&nbsp;Информация&nbsp;</a></li>
+                        <li><a href="#price" data-toggle="tab">Цены</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="info">
+                            <button class="btn btn-success" style="border-radius: 0;" object-name="btnpupdate" onclick="priceUpdate(this)">Редактировать</button>
+                            <table class="table table-bordered">
+                                <tr><Th>Название:</Th><Td><em object-name="name"></em></Td></tr>
+                                <tr><Th>№ Договора:</Th><Td><em object-name="contact_number"></em></Td></tr>
+                                <tr><Th>Дата договора:</Th><Td><em object-name="contact_date"></em></Td></tr>
+                                <tr><Th>№ доп. соглашения:</Th><Td><em object-name="accord_number"></em></Td></tr>
+                                <tr><Th>Дата доп. соглашения:</Th><Td><em object-name="accord_date"></em></Td></tr>
+                                <tr><Th>Заказчик:</Th><Td><em object-name="customer"></em></Td></tr>
+                                <tr><Th>Подрядчик:</Th><Td><em object-name="cnotactor"></em></Td></tr>
+                                <tr><Th>Тип:</Th><Td><em object-name="type"></em></Td></tr>
+                            </table>
+                                <button class="btn btn-danger" object-name="btnpdelete" onclick="deletePrice(this)">Удалить</button>
+                        </div>
+                        <div class="tab-pane" id="price">
+                           <!-- <br>
+                            <div>Добавить позицию<br>
+                                <select style = "width:100px" object-name="work_1part">
+                                    <option value = "-1" >---</option>
+                                </select><br>
+                                <select object-name="work_2part">
+                                    <option value = "-1" >---</option>
+                                </select><br>
+                                <select object-name="work_3part">
+                                    <option value = "-1" >---</option>
+                                </select><br>
+                                Название работы: <input type = "text">
+                                Единица измерения: <input type = "text">
+                                <button object-name = "add_work">Добавить позицию</button>
+                            </div>-->
+                            <div class="accordion" id="accordion2">
+                                <div class="accordion-group">
+                                    <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                                            Добавить работу
+                                        </a>
+                                    </div>
+                                    <div id="collapseOne" class="accordion-body collapse">
+                                        <div class="accordion-inner" style="height: 320px; max-height: 320px;">
+                                            <div style="border-right: 1px solid #d0d0d0; overflow-y: auto; height: 300px; max-height: 300px;" class="col-lg-3"><ul class="nav nav-pills" object-name="work-1"></ul></div>
+                                            <div style="border-right: 1px solid #d0d0d0; overflow-y: auto; height: 300px; max-height: 300px;" class="col-lg-3"><ul class="nav nav-pills" object-name="work-2"></ul></div>
+                                            <div style="border-right: 1px solid #d0d0d0; overflow-y: auto; height: 300px; max-height: 300px;" class="col-lg-3"><ul class="nav nav-pills" object-name="work-3"></ul></div>
+                                            <div style="height: 300px; max-height: 300px; overflow-y: auto;"><ul class="nav nav-pills" object-name="work-4"></ul></div>
+                                        </div>
+                                        <div class="col-lg-5" style = "float: none !important;">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Название&nbsp;</span>
+                                                <input type="text" class="form-control" object-name="name" />
+                                            </div>
+                                        </div> <br>
+                                        <div class="col-lg-5" style = "float: none !important;">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Единица измерений&nbsp;</span>
+                                                <input type="text" class="form-control" object-name="min" />
+                                            </div>
+                                        </div><br>
+                                        <div class="col-lg-5" style = "float: none !important;">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Цена&nbsp;</span>
+                                                <input type="text" class="form-control" object-name="retail" />
+                                            </div>
+                                        </div><br>
+                                        &nbsp;&nbsp; <a href="#" class="btn btn-success" onclick = "addWork();">Внести</a><br>&nbsp;
+                                    </div>
+
+                                </div>
+                            </div>
+                            <button class="btn btn-success" style="border-radius: 0;" onclick="newPriceItem()">Редактировать позиции</button>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>№№</th>
+                                        <th>Название</th>
+                                        <th>Ед. измерения</th>
+                                        <th>Мин. объем</th>
+                                        <th>Цена</th>
+                                    </tr>
+                                </thead>
+                                <tbody object-name="price_content">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                                   <!-- -->
+     
+            </div>
+                </div>w
+        </div>
+        <div class="modal fade" id="new_price">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Новая расценка</h4>
+      </div>
+      <div class="modal-body">
+          <form class="form-horizontal" object-name="newPriceForm">
+            <div class="form-group">
+              <label for="inputName" class="col-lg-5 control-label" style="text-align: left;">Название:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputName" name="name" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputcontact_number" class="col-lg-5 control-label" style="text-align: left;">№ Договора:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputcontact_number" name="contact_number" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputcontact_date" class="col-lg-5 control-label" style="text-align: left;">Дата договора:</label>
+              <div class="col-lg-7">
+                <input type="date" class="form-control" id="inputcontact_date" name="contact_date" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputaccord_number" class="col-lg-5 control-label" style="text-align: left;">№ доп. соглашения:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputaccord_number" name="accord_number" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputaccord_date" class="col-lg-5 control-label" style="text-align: left;">Дата доп. соглашения:</label>
+              <div class="col-lg-7">
+                <input type="date" class="form-control" id="inputaccord_date" name="accord_date" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputcustomer" class="col-lg-5 control-label" style="text-align: left;">Заказчик:</label>
+              <div class="col-lg-7">
+                  <select class="form-control" id="inputcustomer" name="customer"></select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputcontactor" class="col-lg-5 control-label" style="text-align: left;">Подрядчик:</label>
+              <div class="col-lg-7">
+                <select class="form-control" id="inputcontactor" name="contactor">
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputtype" class="col-lg-5 control-label" style="text-align: left;">Тип:</label>
+              <div class="col-lg-7">
+                  <select class="form-control" id="inputtype" name="type"><option value="0">---</option><option value="ms">МС</option><option value="drs">ДРС</option></select>
+              </div>
+            </div>
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary" onclick="saveNewPrice()">Сохранить</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- -->
+<div class="modal fade" id="update_price">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Параметры расценки</h4>
+      </div>
+      <div class="modal-body">
+          <form class="form-horizontal" object-name="updatePriceForm">
+              <input type="hidden" name="id" />
+            <div class="form-group">
+              <label for="inputName" class="col-lg-5 control-label" style="text-align: left;">Название:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputName" name="name" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputcontact_number" class="col-lg-5 control-label" style="text-align: left;">№ Договора:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputcontact_number" name="contact_number" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputcontact_date" class="col-lg-5 control-label" style="text-align: left;">Дата договора:</label>
+              <div class="col-lg-7">
+                <input type="date" class="form-control" id="inputcontact_date" name="contact_date" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputaccord_number" class="col-lg-5 control-label" style="text-align: left;">№ доп. соглашения:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputaccord_number" name="accord_number" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputaccord_date" class="col-lg-5 control-label" style="text-align: left;">Дата доп. соглашения:</label>
+              <div class="col-lg-7">
+                <input type="date" class="form-control" id="inputaccord_date" name="accord_date" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputcustomer" class="col-lg-5 control-label" style="text-align: left;">Заказчик:</label>
+              <div class="col-lg-7">
+                  <select class="form-control" id="inputcustomer" name="customer"></select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputcontactor" class="col-lg-5 control-label" style="text-align: left;">Подрядчик:</label>
+              <div class="col-lg-7">
+                <select class="form-control" id="inputcontactor" name="contactor">
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputtype" class="col-lg-5 control-label" style="text-align: left;">Тип:</label>
+              <div class="col-lg-7">
+                  <select class="form-control" id="inputtype" name="type"><option value="0">---</option><option value="ms">МС</option><option value="drs">ДРС</option></select>
+              </div>
+            </div>
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary" onclick="saveUpdatePrice()">Сохранить</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    <div class="modal fade" id="new_price_item">
+  <div class="modal-dialog " style="border: 0px solid #ff0000; width: 990px;">
+    <div class="modal-content ">
+      <div class="modal-header ">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Выбор позиции</h4>
+      </div>
+      <div class="modal-body">
+          <form class="form-horizontal" object-name="newPriceFormItem">
+              <table class="table table-bordered">
+                  <thead>
+                      <th>№№</th>
+                      <th>Название</th>
+                      <th width="30">Ед. измерения</th>
+                      <th>Мин. объем</th>
+                      <th width="150">Цена</th>
+                      <th></th>
+                  </thead>
+                  <tbody object-name="price_content_list">
+                      
+                  </tbody>
+              </table>
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary" onclick="saveNewPrice()">Сохранить</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    </body>
+</html>

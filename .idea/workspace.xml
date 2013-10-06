@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d37999bd-e0b8-4e18-aa24-3cf388823b51" name="Default" comment="" />
+    <ignored path="ksnew.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/api.php" changelist="d37999bd-e0b8-4e18-aa24-3cf388823b51" time="1379234320301" ignored="false" />
+    <file path="/a.dummy" changelist="d37999bd-e0b8-4e18-aa24-3cf388823b51" time="1381014509433" ignored="false" />
+    <file path="/catalog_price.js" changelist="d37999bd-e0b8-4e18-aa24-3cf388823b51" time="1379235005574" ignored="false" />
+    <file path="/editor_main.js" changelist="d37999bd-e0b8-4e18-aa24-3cf388823b51" time="1381011262997" ignored="false" />
+    <file path="/ks.php" changelist="d37999bd-e0b8-4e18-aa24-3cf388823b51" time="1380718343095" ignored="false" />
+    <file path="/workspace_catalog_price.html" changelist="d37999bd-e0b8-4e18-aa24-3cf388823b51" time="1379232061707" ignored="false" />
+    <file path="/workspace_editor_ks_drs.html" changelist="d37999bd-e0b8-4e18-aa24-3cf388823b51" time="1378502605971" ignored="false" />
+    <file path="/catalog_ks.js" changelist="d37999bd-e0b8-4e18-aa24-3cf388823b51" time="1379017999206" ignored="false" />
+    <file path="/workspace_editor_ks.html" changelist="d37999bd-e0b8-4e18-aa24-3cf388823b51" time="1378503017225" ignored="false" />
+    <file path="/workspace_editor_ks_drs.php" changelist="d37999bd-e0b8-4e18-aa24-3cf388823b51" time="1380269050728" ignored="false" />
+    <file path="/index.php" changelist="d37999bd-e0b8-4e18-aa24-3cf388823b51" time="1378508651697" ignored="false" />
+    <file path="/editor_ks_drs.js" changelist="d37999bd-e0b8-4e18-aa24-3cf388823b51" time="1380462679677" ignored="false" />
+    <file path="/editor_ks_ms.js" changelist="d37999bd-e0b8-4e18-aa24-3cf388823b51" time="1381011774457" ignored="false" />
+    <file path="/print_ks3.html" changelist="d37999bd-e0b8-4e18-aa24-3cf388823b51" time="1378890203488" ignored="false" />
+    <file path="/workspace_editor_ks_ms.html" changelist="d37999bd-e0b8-4e18-aa24-3cf388823b51" time="1380360066647" ignored="false" />
+    <file path="/print_ks11.html" changelist="d37999bd-e0b8-4e18-aa24-3cf388823b51" time="1380264771612" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ksnew" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="ks.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/model/ks.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="43" selection-start="2360" selection-end="2360" vertical-scroll-proportion="-0.65384614">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="print_ks11.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/view/print_ks11.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="156" column="14" selection-start="4046" selection-end="4048" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="print_ks2.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/view/print_ks2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="239" column="61" selection-start="12290" selection-end="12290" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editor_ks_drs.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/editor_ks_drs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="8" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1380463070827" expanded="false" signature="3768:3806" placeholder="..." />
+                <marker date="1380463070827" expanded="false" signature="3886:3905" placeholder="..." />
+                <marker date="1380463070827" expanded="false" signature="3980:3999" placeholder="..." />
+                <marker date="1380463070827" expanded="false" signature="4140:4159" placeholder="..." />
+                <marker date="1380463070827" expanded="false" signature="4234:4253" placeholder="..." />
+                <marker date="1380463070827" expanded="false" signature="4376:4395" placeholder="..." />
+                <marker date="1380463070827" expanded="false" signature="4518:4537" placeholder="..." />
+                <marker date="1380463070827" expanded="false" signature="4582:4605" placeholder="..." />
+                <marker date="1380463070827" expanded="false" signature="6625:6687" placeholder="..." />
+                <marker date="1380463070827" expanded="false" signature="6761:6823" placeholder="..." />
+                <marker date="1380463070827" expanded="false" signature="6868:6930" placeholder="..." />
+                <marker date="1380463070827" expanded="false" signature="7011:7030" placeholder="..." />
+                <marker date="1380463070827" expanded="false" signature="7150:7169" placeholder="..." />
+                <marker date="1380463070827" expanded="false" signature="7298:7317" placeholder="..." />
+                <marker date="1380463070827" expanded="false" signature="7362:7385" placeholder="..." />
+                <marker date="1380463070827" expanded="true" signature="12049:12111" placeholder="..." />
+                <marker date="1380463070827" expanded="true" signature="12185:12247" placeholder="..." />
+                <marker date="1380463070827" expanded="true" signature="12292:12354" placeholder="..." />
+                <marker date="1380463070827" expanded="true" signature="12435:12454" placeholder="..." />
+                <marker date="1380463070827" expanded="true" signature="12633:12652" placeholder="..." />
+                <marker date="1380463070827" expanded="true" signature="12781:12800" placeholder="..." />
+                <marker date="1380463070827" expanded="true" signature="12845:12868" placeholder="..." />
+                <marker date="1380463070827" expanded="true" signature="13523:13561" placeholder="..." />
+                <marker date="1380463070827" expanded="false" signature="13641:13660" placeholder="..." />
+                <marker date="1380463070827" expanded="false" signature="13784:13803" placeholder="..." />
+                <marker date="1380463070827" expanded="false" signature="14035:14054" placeholder="..." />
+                <marker date="1380463070827" expanded="false" signature="14174:14193" placeholder="..." />
+                <marker date="1380463070827" expanded="false" signature="14352:14371" placeholder="..." />
+                <marker date="1380463070827" expanded="false" signature="14531:14550" placeholder="..." />
+                <marker date="1380463070827" expanded="false" signature="14595:14618" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editor_main.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/editor_main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="109" column="77" selection-start="4964" selection-end="4964" vertical-scroll-proportion="0.45487365">
+              <folding>
+                <element signature="n#!!block;n#getAtsList#0" expanded="false" />
+                <element signature="e#353#2281#0" expanded="false" />
+                <element signature="e#425#558#0" expanded="false" />
+                <element signature="e#828#957#0" expanded="false" />
+                <element signature="e#986#2174#0" expanded="false" />
+                <element signature="e#1865#1926#0" expanded="false" />
+                <element signature="e#2008#2160#0" expanded="false" />
+                <element signature="e#2071#2141#0" expanded="false" />
+                <element signature="e#2210#2274#0" expanded="false" />
+                <element signature="n#!!block;n#getClusterList#0" expanded="false" />
+                <element signature="e#2679#3601#0" expanded="false" />
+                <element signature="e#2751#2884#0" expanded="false" />
+                <element signature="e#3154#3299#0" expanded="false" />
+                <element signature="e#3350#3595#0" expanded="false" />
+                <element signature="e#4125#4258#0" expanded="false" />
+                <element signature="e#5069#5323#0" expanded="false" />
+                <element signature="e#5324#6241#0" expanded="false" />
+                <element signature="n#!!block;n#getWorks#0" expanded="false" />
+                <element signature="e#6345#6461#0" expanded="false" />
+                <element signature="e#6388#6455#0" expanded="false" />
+                <element signature="e#7019#8189#0" expanded="false" />
+                <element signature="e#7091#7206#0" expanded="false" />
+                <element signature="e#7428#8183#0" expanded="false" />
+                <element signature="e#7556#7715#0" expanded="false" />
+                <element signature="n#!!block;n#getContactorList#0" expanded="false" />
+                <element signature="e#8396#9250#0" expanded="false" />
+                <element signature="e#8524#8775#0" expanded="false" />
+                <element signature="e#9020#9244#0" expanded="false" />
+                <element signature="n#!!block;n#getPriceList#0" expanded="false" />
+                <element signature="e#9667#10379#0" expanded="false" />
+                <element signature="e#10023#10169#0" expanded="false" />
+                <element signature="e#10198#10321#0" expanded="false" />
+                <element signature="e#10357#10373#0" expanded="false" />
+                <element signature="n#!!block;n#getPriceData#0" expanded="false" />
+                <element signature="e#10586#10761#0" expanded="false" />
+                <element signature="n#!!block;n#getItemsPrice#0" expanded="false" />
+                <element signature="e#10986#11429#0" expanded="false" />
+                <element signature="e#11197#11423#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editor_ks_ms.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/editor_ks_ms.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="388" column="12" selection-start="21346" selection-end="21346" vertical-scroll-proportion="-4.12">
+              <folding>
+                <element signature="e#29#1127#0" expanded="false" />
+                <element signature="e#225#364#0" expanded="false" />
+                <element signature="e#423#524#0" expanded="false" />
+                <element signature="e#583#771#0" expanded="false" />
+                <element signature="e#674#765#0" expanded="false" />
+                <element signature="e#1079#1123#0" expanded="false" />
+                <element signature="n#!!block;n#selectAddress#0" expanded="false" />
+                <element signature="e#1273#1355#0" expanded="false" />
+                <element signature="e#1690#3513#0" expanded="false" />
+                <element signature="e#1762#1899#0" expanded="false" />
+                <element signature="e#2100#2484#0" expanded="false" />
+                <element signature="e#2219#2474#0" expanded="false" />
+                <element signature="e#3442#3486#0" expanded="false" />
+                <element signature="n#!!block;n#addresstoggle#0" expanded="false" />
+                <element signature="e#3858#3973#0" expanded="false" />
+                <element signature="e#3999#4393#0" expanded="false" />
+                <element signature="e#4397#4784#0" expanded="false" />
+                <element signature="n#!!block;n#addRowWork#0" expanded="false" />
+                <element signature="e#4876#4939#0" expanded="false" />
+                <element signature="e#5020#5160#0" expanded="false" />
+                <element signature="e#5648#5908#0" expanded="false" />
+                <element signature="e#5922#5946#0" expanded="false" />
+                <element signature="n#!!block;n#workCalcRow#0" expanded="false" />
+                <element signature="n#!!block;n#workRecalc#0" expanded="false" />
+                <element signature="e#7634#8184#0" expanded="false" />
+                <element signature="n#!!block;n#workDelRow#0" expanded="false" />
+                <element signature="n#!!block;n#workDelRows#0" expanded="false" />
+                <element signature="n#!!block;n#materialCalcRow#0" expanded="false" />
+                <element signature="n#!!block;n#materialDelRow#0" expanded="false" />
+                <element signature="n#!!block;n#materialAddRow#0" expanded="false" />
+                <element signature="e#9057#9243#0" expanded="false" />
+                <element signature="e#9257#9280#0" expanded="false" />
+                <element signature="n#!!block;n#mathCompens#0" expanded="false" />
+                <element signature="e#10527#10581#0" expanded="false" />
+                <element signature="e#10746#14861#0" expanded="false" />
+                <element signature="e#10846#14855#0" expanded="false" />
+                <element signature="e#11222#14845#0" expanded="false" />
+                <element signature="e#11320#12885#0" expanded="false" />
+                <element signature="e#11549#12867#0" expanded="false" />
+                <element signature="e#12929#14831#0" expanded="false" />
+                <element signature="e#13939#13976#0" expanded="false" />
+                <element signature="n#!!block;n#save_ms#0" expanded="false" />
+                <element signature="e#15534#16264#0" expanded="false" />
+                <element signature="e#15634#16258#0" expanded="false" />
+                <element signature="e#16337#16779#0" expanded="false" />
+                <element signature="e#16853#17766#0" expanded="false" />
+                <element signature="e#18163#18383#0" expanded="false" />
+                <element signature="n#!!block;n#getEditData#0" expanded="false" />
+                <element signature="e#18426#18846#0" expanded="false" />
+                <element signature="e#18573#18740#0" expanded="false" />
+                <element signature="e#18866#18874#0" expanded="false" />
+                <element signature="e#18972#19076#0" expanded="false" />
+                <element signature="e#19157#19338#0" expanded="false" />
+                <element signature="e#19742#20002#0" expanded="false" />
+                <element signature="e#20016#20040#0" expanded="false" />
+                <element signature="n#!!block;n#selectAddressEdit#0" expanded="false" />
+                <element signature="e#21877#21959#0" expanded="false" />
+                <element signature="e#22390#22539#0" expanded="false" />
+                <element signature="e#22752#23168#0" expanded="false" />
+                <element signature="e#22879#23154#0" expanded="false" />
+                <element signature="n#!!block;n#materialAddRowEdit#0" expanded="false" />
+                <element signature="e#24381#24567#0" expanded="false" />
+                <element signature="e#24581#24604#0" expanded="false" />
+                <marker date="1381012291675" expanded="false" signature="2620:2663" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="2927:2950" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="6081:6143" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="6217:6279" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="6324:6386" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="6467:6486" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="6606:6625" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="6754:6773" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="6818:6841" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="9359:9397" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="9477:9496" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="9571:9590" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="9731:9750" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="9825:9844" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="9967:9986" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="10109:10128" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="10173:10196" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="14110:14129" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="14246:14265" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="14664:14683" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="20175:20237" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="20311:20373" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="20418:20480" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="20561:20580" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="20735:20754" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="20883:20902" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="20947:20970" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="23316:23359" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="23631:23654" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="24683:24721" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="24801:24820" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="24944:24963" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="25195:25214" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="25334:25353" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="25512:25531" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="25691:25710" placeholder="..." />
+                <marker date="1381012291675" expanded="false" signature="25755:25778" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace_editor_ks_ms.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/view/workspace_editor_ks_ms.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="189" column="105" selection-start="10915" selection-end="10915" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/jquery.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="36" selection-start="113" selection-end="116" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="53" selection-start="2179" selection-end="2179" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/system/view/print_ks3.html" />
+        <option value="$PROJECT_DIR$/assets/js/catalog_ks.js" />
+        <option value="$PROJECT_DIR$/system/view/workspace_catalog_price.html" />
+        <option value="$PROJECT_DIR$/api.php" />
+        <option value="$PROJECT_DIR$/assets/js/catalog_price.js" />
+        <option value="$PROJECT_DIR$/system/controller/ks.php" />
+        <option value="$PROJECT_DIR$/system/view/print_ks11.html" />
+        <option value="$PROJECT_DIR$/assets/js/jquery.js" />
+        <option value="$PROJECT_DIR$/system/view/workspace_editor_ks_drs.php" />
+        <option value="$PROJECT_DIR$/system/view/workspace_editor_ks_ms.html" />
+        <option value="$PROJECT_DIR$/system/view/print_ks2.html" />
+        <option value="$PROJECT_DIR$/system/model/ks.php" />
+        <option value="$PROJECT_DIR$/assets/js/editor_ks_ms.js" />
+        <option value="$PROJECT_DIR$/assets/js/editor_ks_drs.js" />
+        <option value="$PROJECT_DIR$/assets/js/editor_main.js" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1366" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ksnew" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ksnew" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ksnew" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ksnew" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ksnew" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ksnew" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ksnew" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/renova" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d37999bd-e0b8-4e18-aa24-3cf388823b51" name="Default" comment="" />
+      <created>1378292258785</created>
+      <updated>1378292258785</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1366" height="728" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41186735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2607362" sideWeight="0.5881326" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/system/model/ks.php</url>
+          <line>954</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/system/model/ks.php</url>
+          <line>625</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/system/controller/ks.php</url>
+          <line>231</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/assets/js/catalog_price.js</url>
+          <line>209</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/assets/js/catalog_ks.js</url>
+          <line>187</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/assets/js/editor_ks_drs.js</url>
+          <line>68</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/assets/js/editor_ks_drs.js</url>
+          <line>57</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/assets/js/catalog_price.js</url>
+          <line>28</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/assets/js/editor_ks_drs.js</url>
+          <line>120</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/assets/js/editor_ks_ms.js</url>
+          <line>75</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/assets/js/editor_ks_ms.js</url>
+          <line>455</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="16" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/system/view/workspace_catalog_price.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="104" selection-start="7692" selection-end="7692" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/catalog_price.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="212" column="14" selection-start="8325" selection-end="8325" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/view/print_ks3_old2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="42" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/view/print_ks3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="107" selection-start="2341" selection-end="2348" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/controller/ks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="228" column="22" selection-start="9084" selection-end="9084" vertical-scroll-proportion="0.7616279">
+          <folding>
+            <element signature="n#index#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="n#edirot_ks#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="n#edirot_ks_drs#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="n#edirot_ks_ms#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="n#catalog_address#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="n#catalog_contractor#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="n#catalog_price#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="n#catalog_ks#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="n#staticKeys#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="n#address#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="e#1936#3184#0" expanded="false" />
+            <element signature="e#1971#2069#0" expanded="false" />
+            <element signature="e#2082#2373#0" expanded="false" />
+            <element signature="e#2386#2860#0" expanded="false" />
+            <element signature="e#2873#3174#0" expanded="false" />
+            <element signature="n#works#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="n#catalog_contractor_add#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="e#3482#3765#0" expanded="false" />
+            <element signature="e#3799#3965#0" expanded="false" />
+            <element signature="n#catalog_contractor_update#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="e#4124#4416#0" expanded="false" />
+            <element signature="e#4450#4616#0" expanded="false" />
+            <element signature="n#catalog_contractor_list_get#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="n#catalog_contractor_get_data#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="n#catalog_contractor_delete#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="n#catalog_price_list_get#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="e#5420#5740#0" expanded="false" />
+            <element signature="e#5475#5640#0" expanded="false" />
+            <element signature="n#catalog_price_add#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="e#6058#6224#0" expanded="false" />
+            <element signature="n#catalog_price_getdata#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="n#catalog_price_update#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="e#6828#6994#0" expanded="false" />
+            <element signature="n#catalog_price_delete#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="n#save_ks#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="e#7451#8543#0" expanded="false" />
+            <element signature="e#7688#7866#0" expanded="false" />
+            <element signature="e#7962#8543#0" expanded="false" />
+            <element signature="e#8226#8404#0" expanded="false" />
+            <element signature="n#ks_list#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="e#8679#8842#0" expanded="false" />
+            <element signature="n#ks_print#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="n#price_item#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+            <element signature="n#addWork#0;n#ctrl_ks#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/view/workspace_editor_ks_drs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="169" column="94" selection-start="9501" selection-end="9502" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="53" selection-start="2179" selection-end="2179" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/view/workspace_editor_ks_ms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="189" column="105" selection-start="10915" selection-end="10915" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/view/print_ks11.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="14" selection-start="4046" selection-end="4048" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/view/print_ks2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="239" column="61" selection-start="12290" selection-end="12290" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/model/ks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="43" selection-start="2360" selection-end="2360" vertical-scroll-proportion="-0.65384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="36" selection-start="113" selection-end="116" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/jquery-2.0.3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="650" column="8" selection-start="15970" selection-end="15990" vertical-scroll-proportion="0.33159268">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/editor_ks_ms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="388" column="12" selection-start="21346" selection-end="21346" vertical-scroll-proportion="-4.12">
+          <folding>
+            <element signature="e#29#1127#0" expanded="false" />
+            <element signature="e#225#364#0" expanded="false" />
+            <element signature="e#423#524#0" expanded="false" />
+            <element signature="e#583#771#0" expanded="false" />
+            <element signature="e#674#765#0" expanded="false" />
+            <element signature="e#1079#1123#0" expanded="false" />
+            <element signature="n#!!block;n#selectAddress#0" expanded="false" />
+            <element signature="e#1273#1355#0" expanded="false" />
+            <element signature="e#1690#3513#0" expanded="false" />
+            <element signature="e#1762#1899#0" expanded="false" />
+            <element signature="e#2100#2484#0" expanded="false" />
+            <element signature="e#2219#2474#0" expanded="false" />
+            <element signature="e#3442#3486#0" expanded="false" />
+            <element signature="n#!!block;n#addresstoggle#0" expanded="false" />
+            <element signature="e#3858#3973#0" expanded="false" />
+            <element signature="e#3999#4393#0" expanded="false" />
+            <element signature="e#4397#4784#0" expanded="false" />
+            <element signature="n#!!block;n#addRowWork#0" expanded="false" />
+            <element signature="e#4876#4939#0" expanded="false" />
+            <element signature="e#5020#5160#0" expanded="false" />
+            <element signature="e#5648#5908#0" expanded="false" />
+            <element signature="e#5922#5946#0" expanded="false" />
+            <element signature="n#!!block;n#workCalcRow#0" expanded="false" />
+            <element signature="n#!!block;n#workRecalc#0" expanded="false" />
+            <element signature="e#7634#8184#0" expanded="false" />
+            <element signature="n#!!block;n#workDelRow#0" expanded="false" />
+            <element signature="n#!!block;n#workDelRows#0" expanded="false" />
+            <element signature="n#!!block;n#materialCalcRow#0" expanded="false" />
+            <element signature="n#!!block;n#materialDelRow#0" expanded="false" />
+            <element signature="n#!!block;n#materialAddRow#0" expanded="false" />
+            <element signature="e#9057#9243#0" expanded="false" />
+            <element signature="e#9257#9280#0" expanded="false" />
+            <element signature="n#!!block;n#mathCompens#0" expanded="false" />
+            <element signature="e#10527#10581#0" expanded="false" />
+            <element signature="e#10746#14861#0" expanded="false" />
+            <element signature="e#10846#14855#0" expanded="false" />
+            <element signature="e#11222#14845#0" expanded="false" />
+            <element signature="e#11320#12885#0" expanded="false" />
+            <element signature="e#11549#12867#0" expanded="false" />
+            <element signature="e#12929#14831#0" expanded="false" />
+            <element signature="e#13939#13976#0" expanded="false" />
+            <element signature="n#!!block;n#save_ms#0" expanded="false" />
+            <element signature="e#15534#16264#0" expanded="false" />
+            <element signature="e#15634#16258#0" expanded="false" />
+            <element signature="e#16337#16779#0" expanded="false" />
+            <element signature="e#16853#17766#0" expanded="false" />
+            <element signature="e#18163#18383#0" expanded="false" />
+            <element signature="n#!!block;n#getEditData#0" expanded="false" />
+            <element signature="e#18426#18846#0" expanded="false" />
+            <element signature="e#18573#18740#0" expanded="false" />
+            <element signature="e#18866#18874#0" expanded="false" />
+            <element signature="e#18972#19076#0" expanded="false" />
+            <element signature="e#19157#19338#0" expanded="false" />
+            <element signature="e#19742#20002#0" expanded="false" />
+            <element signature="e#20016#20040#0" expanded="false" />
+            <element signature="n#!!block;n#selectAddressEdit#0" expanded="false" />
+            <element signature="e#21877#21959#0" expanded="false" />
+            <element signature="e#22390#22539#0" expanded="false" />
+            <element signature="e#22752#23168#0" expanded="false" />
+            <element signature="e#22879#23154#0" expanded="false" />
+            <element signature="n#!!block;n#materialAddRowEdit#0" expanded="false" />
+            <element signature="e#24381#24567#0" expanded="false" />
+            <element signature="e#24581#24604#0" expanded="false" />
+            <marker date="1381012291675" expanded="false" signature="2620:2663" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="2927:2950" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="6081:6143" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="6217:6279" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="6324:6386" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="6467:6486" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="6606:6625" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="6754:6773" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="6818:6841" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="9359:9397" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="9477:9496" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="9571:9590" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="9731:9750" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="9825:9844" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="9967:9986" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="10109:10128" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="10173:10196" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="14110:14129" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="14246:14265" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="14664:14683" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="20175:20237" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="20311:20373" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="20418:20480" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="20561:20580" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="20735:20754" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="20883:20902" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="20947:20970" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="23316:23359" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="23631:23654" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="24683:24721" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="24801:24820" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="24944:24963" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="25195:25214" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="25334:25353" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="25512:25531" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="25691:25710" placeholder="..." />
+            <marker date="1381012291675" expanded="false" signature="25755:25778" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/editor_ks_drs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="8" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1380463070827" expanded="false" signature="3768:3806" placeholder="..." />
+            <marker date="1380463070827" expanded="false" signature="3886:3905" placeholder="..." />
+            <marker date="1380463070827" expanded="false" signature="3980:3999" placeholder="..." />
+            <marker date="1380463070827" expanded="false" signature="4140:4159" placeholder="..." />
+            <marker date="1380463070827" expanded="false" signature="4234:4253" placeholder="..." />
+            <marker date="1380463070827" expanded="false" signature="4376:4395" placeholder="..." />
+            <marker date="1380463070827" expanded="false" signature="4518:4537" placeholder="..." />
+            <marker date="1380463070827" expanded="false" signature="4582:4605" placeholder="..." />
+            <marker date="1380463070827" expanded="false" signature="6625:6687" placeholder="..." />
+            <marker date="1380463070827" expanded="false" signature="6761:6823" placeholder="..." />
+            <marker date="1380463070827" expanded="false" signature="6868:6930" placeholder="..." />
+            <marker date="1380463070827" expanded="false" signature="7011:7030" placeholder="..." />
+            <marker date="1380463070827" expanded="false" signature="7150:7169" placeholder="..." />
+            <marker date="1380463070827" expanded="false" signature="7298:7317" placeholder="..." />
+            <marker date="1380463070827" expanded="false" signature="7362:7385" placeholder="..." />
+            <marker date="1380463070827" expanded="true" signature="12049:12111" placeholder="..." />
+            <marker date="1380463070827" expanded="true" signature="12185:12247" placeholder="..." />
+            <marker date="1380463070827" expanded="true" signature="12292:12354" placeholder="..." />
+            <marker date="1380463070827" expanded="true" signature="12435:12454" placeholder="..." />
+            <marker date="1380463070827" expanded="true" signature="12633:12652" placeholder="..." />
+            <marker date="1380463070827" expanded="true" signature="12781:12800" placeholder="..." />
+            <marker date="1380463070827" expanded="true" signature="12845:12868" placeholder="..." />
+            <marker date="1380463070827" expanded="true" signature="13523:13561" placeholder="..." />
+            <marker date="1380463070827" expanded="false" signature="13641:13660" placeholder="..." />
+            <marker date="1380463070827" expanded="false" signature="13784:13803" placeholder="..." />
+            <marker date="1380463070827" expanded="false" signature="14035:14054" placeholder="..." />
+            <marker date="1380463070827" expanded="false" signature="14174:14193" placeholder="..." />
+            <marker date="1380463070827" expanded="false" signature="14352:14371" placeholder="..." />
+            <marker date="1380463070827" expanded="false" signature="14531:14550" placeholder="..." />
+            <marker date="1380463070827" expanded="false" signature="14595:14618" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/editor_main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="77" selection-start="4964" selection-end="4964" vertical-scroll-proportion="0.45487365">
+          <folding>
+            <element signature="n#!!block;n#getAtsList#0" expanded="false" />
+            <element signature="e#353#2281#0" expanded="false" />
+            <element signature="e#425#558#0" expanded="false" />
+            <element signature="e#828#957#0" expanded="false" />
+            <element signature="e#986#2174#0" expanded="false" />
+            <element signature="e#1865#1926#0" expanded="false" />
+            <element signature="e#2008#2160#0" expanded="false" />
+            <element signature="e#2071#2141#0" expanded="false" />
+            <element signature="e#2210#2274#0" expanded="false" />
+            <element signature="n#!!block;n#getClusterList#0" expanded="false" />
+            <element signature="e#2679#3601#0" expanded="false" />
+            <element signature="e#2751#2884#0" expanded="false" />
+            <element signature="e#3154#3299#0" expanded="false" />
+            <element signature="e#3350#3595#0" expanded="false" />
+            <element signature="e#4125#4258#0" expanded="false" />
+            <element signature="e#5069#5323#0" expanded="false" />
+            <element signature="e#5324#6241#0" expanded="false" />
+            <element signature="n#!!block;n#getWorks#0" expanded="false" />
+            <element signature="e#6345#6461#0" expanded="false" />
+            <element signature="e#6388#6455#0" expanded="false" />
+            <element signature="e#7019#8189#0" expanded="false" />
+            <element signature="e#7091#7206#0" expanded="false" />
+            <element signature="e#7428#8183#0" expanded="false" />
+            <element signature="e#7556#7715#0" expanded="false" />
+            <element signature="n#!!block;n#getContactorList#0" expanded="false" />
+            <element signature="e#8396#9250#0" expanded="false" />
+            <element signature="e#8524#8775#0" expanded="false" />
+            <element signature="e#9020#9244#0" expanded="false" />
+            <element signature="n#!!block;n#getPriceList#0" expanded="false" />
+            <element signature="e#9667#10379#0" expanded="false" />
+            <element signature="e#10023#10169#0" expanded="false" />
+            <element signature="e#10198#10321#0" expanded="false" />
+            <element signature="e#10357#10373#0" expanded="false" />
+            <element signature="n#!!block;n#getPriceData#0" expanded="false" />
+            <element signature="e#10586#10761#0" expanded="false" />
+            <element signature="n#!!block;n#getItemsPrice#0" expanded="false" />
+            <element signature="e#10986#11429#0" expanded="false" />
+            <element signature="e#11197#11423#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

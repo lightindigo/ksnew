@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <link rel="stylesheet" href="assets/css/bootstrap.css">
+         <link rel="stylesheet" href="assets/css/bootstrap-glyphicons.css" />
+         <script>ks_type = "ms";</script>
+         <script src="assets/js/jquery-2.0.3.js"></script>
+         <script src="assets/js/bootstrap.js"></script>
+         <script src="assets/js/editor_main.js"></script>
+         <script src="assets/js/editor_ks_ms.js"></script>
+         <style>
+
+             body { padding-top: 70px; }
+         </style>
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top">
+            <a class="navbar-brand" href="?act=main" title="В главное меню"><i class="glyphicon glyphicon-home"></i></a>
+            <a class="navbar-brand" href="#">Редактор КС МС</a>
+            <ul class="nav navbar-nav">
+              <li class="active">
+                  <a data-toggle="dropdown" href="?act=edirot_ks">Редакторы</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                      <li class="active"><a href="?act=editor_ks_ms">Редактор МС</a></li>
+                      <li><a href="?act=editor_ks_drs">Редактор ДРС</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a data-toggle="dropdown" href="#">Каталоги</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                      <li><a href="?act=catalog_contractor">Подрядчики</a></li>
+                      <li><a href="?act=catalog_price">Расценки</a></li>
+                      <li><a href="?act=catalog_address">Адреса</a></li>
+                      <li><a href="?act=catalog_ks">Формы КС</a></li>
+                  </ul>
+              </li>
+            </ul>
+        </div>
+        <!-- -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="input-group">
+                        <span class="input-group-addon">Заказчик&nbsp;&nbsp;&nbsp;</span>
+                        <select class="form-control" object-name="customer" id = "customer">
+                            <option value="0">Не выбран</option>
+                        </select>
+                      </div><br />
+                    <div class="input-group">
+                        <span class="input-group-addon">Подрядчик</span>
+                        <select class="form-control" object-name="contractor" id = 'contractor'>
+                            <option value="0">Не выбран</option>
+                        </select>
+                      </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="input-group">
+                        <span class="input-group-addon">№ договора&nbsp;&nbsp;</span>
+                        <select class="form-control" object-name="contact-n" id = "contract"></select>
+                      </div><br />
+                    <div class="input-group">
+                        <span class="input-group-addon">№ документа</span>
+                        <input type="text" class="form-control" object-name="document-n" placeholder="" id = "contr_num" />
+                      </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="input-group">
+                        <span class="input-group-addon">Начало работ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <input type="date" object-name="date-start" class="form-control" />
+                      </div><br />
+                    <div class="input-group">
+                        <span class="input-group-addon">Окончание работ</span>
+                        <input type="date" object-name="date-stop" class="form-control" />
+                      </div>
+                </div>
+            </div><br />
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="input-group">
+                        <span class="input-group-addon">Название работ</span>
+                        <input type="text" class="form-control" object-name="work-name" value="Строительство МС по расценкам 2012 года" />
+                      </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="input-group">
+                        <span class="input-group-addon">АТС</span>
+                        <select class="form-control" object-name="ats" id="ats">
+                            <option value="0">---</option>
+                        </select>
+                      </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="input-group">
+                        <span class="input-group-addon">Кластер</span>
+                        <select class="form-control" object-name="cluster" id="cluster">
+                            <option value="0">---</option>
+                        </select>
+                      </div>
+                </div>
+            </div><br />
+            <div class="row">
+                <h2>Работы</h2>
+                <table class="table table-bordered" object-name="ks">
+                    <tbody>
+                        <tr>
+                            <th rowspan="2" style="text-align: center; vertical-align: middle; width: 50px;">№</th>
+                            <th rowspan="2" style="text-align: center; vertical-align: middle;">Наименование работ</th>
+                            <th rowspan="2" style="text-align: center; vertical-align: middle; width: 30px;">Номер Единичной расценки</th>
+                            <th rowspan="2" style="text-align: center; vertical-align: middle; width: 30px;">Единица измерения</th>
+                            <th colspan="3" style="text-align: center;">Выполнено работ</th>
+                            <th rowspan="2" style="text-align: center; vertical-align: middle; width: 30px;"><a href="#refresh" onclick="workRecalc()" title="Обновить индексацию"><i class="glyphicon glyphicon glyphicon-refresh"></i></a></th>
+                        </tr>
+                        <tr>
+                            <th  style="text-align: center; vertical-align: middle; width: 30px;">Количество</th>
+                            <th  style="text-align: center; vertical-align: middle; width: 100px;">Цена за ед., руб.</th>
+                            <th  style="text-align: center; vertical-align: middle; width: 30px;">Стоимость, руб.</th>
+                        </tr>
+                   </tbody>
+                </table>
+                <div class="accordion" id="accordion2">
+                    <div class="col-lg-5 pull-right" style="margin-right: -15px;">
+                       <div class="input-group">
+                           <span class="input-group-addon" style="height: 37px; border-radius: 0;">Адрес&nbsp;</span>
+                           <select class="form-control" object-name="address" style="height: 37px;">
+                               <option value="0">---</option>
+                           </select>
+                           <span class="input-group-btn">
+                               <button class="btn btn-primary" style="height: 37px;" object-name="activatedAddress" type="button" onclick="selectAddress()">Активировать</button>
+                          </span>
+                         </div>
+                   </div>
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                      
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                      Список доступных работ
+                    </a>
+                    
+                      
+                  </div>
+                  <div id="collapseOne" class="accordion-body collapse">
+                    <div class="accordion-inner" style="height: 320px; max-height: 320px;">
+                            <div style="border-right: 1px solid #d0d0d0; overflow-y: auto; height: 300px; max-height: 300px;" class="col-lg-3"><ul class="nav nav-pills" object-name="work-1"></ul></div>
+                            <div style="border-right: 1px solid #d0d0d0; overflow-y: auto; height: 300px; max-height: 300px;" class="col-lg-3"><ul class="nav nav-pills" object-name="work-2"></ul></div>
+                            <div style="border-right: 1px solid #d0d0d0; overflow-y: auto; height: 300px; max-height: 300px;" class="col-lg-3"><ul class="nav nav-pills" object-name="work-3"></ul></div>
+                            <div style="height: 300px; max-height: 300px; overflow-y: auto;"><ul class="nav nav-pills" object-name="work-4"></ul></div>
+                       </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="input-group">
+                    <span class="input-group-addon">Аванс&nbsp;</span>
+                    <input type="text" class="form-control" object-name="prepayment" value="0" />
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <h2>Компесация</h2>
+                <p>
+                    <button class="btn btn-primary" onclick="mathCompens()">Расчитать компенсацию</button>
+                </p>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="text-align: center; vertical-align: middle; width: 50px;">№</th>
+                            <th style="text-align: center; vertical-align: middle;">Наименование</th>
+                            <th style="text-align: center; vertical-align: middle; width: 30px;">Ед. измерения</th>
+                            <th style="text-align: center; vertical-align: middle; width: 100px;">Объем</th>
+                            <th style="text-align: center; vertical-align: middle; width: 100px;">Цена за ед., руб.</th>
+                            <th style="text-align: center; vertical-align: middle; width: 100px;">Стоимость, руб.</th>
+                        </tr>
+                    </thead>
+                    <tbody  object-name="compens">
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <h2>Материалы</h2>
+                <table class="table table-bordered">
+                    <thead>
+                        <th style="text-align: center; vertical-align: middle; width: 50px;">№</th>
+                        <th style="text-align: center; vertical-align: middle; width: 200px;">Номер материала</th>
+                        <th style="text-align: center; vertical-align: middle; width: 130px;">Партия</th>
+                        <th style="text-align: center; vertical-align: middle;">Наименование материала</th>
+                        <th style="text-align: center; vertical-align: middle; width: 50px;">Ед. измерения</th>
+                        <th style="text-align: center; vertical-align: middle; width: 50px;">Количество</th>
+                        <th style="text-align: center; vertical-align: middle; width: 100px;">Цена</th>
+                        <th style="text-align: center; vertical-align: middle; width: 100px;">Сумма</th>
+                        <th style="text-align: center; vertical-align: middle; width: 30px;"><a href="#refresh" onclick="materialRecalc()" title="Обновить индексацию"><i class="glyphicon glyphicon glyphicon-refresh"></i></a></th>
+                  </thead>
+                  <tbody object-name="material">
+                  </tbody>
+                </table>
+                <button type="button" class="btn btn-primary" object-action="addmaterial"><i class="glyphicon glyphicon-plus" style="font-size: 12px;"></i> Добавить материал</button>
+            </div><br />
+            <div class="row"><button type="button" class="btn btn-success btn-lg btn-block" onclick="save_ms()">Сохранить</button></div>
+
+        </div>
+        <!-- -->
+    </body>
+</html>

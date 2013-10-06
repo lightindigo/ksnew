@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+         <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+         <link rel="stylesheet" href="assets/css/bootstrap-glyphicons.css" />
+         <script src="assets/js/jquery.js"></script>
+         <script src="assets/js/bootstrap.js"></script>
+         <script src="assets/js/catalog_contactor.js"></script>
+         <style>
+             body { padding-top: 70px; }
+         </style>
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top">
+            <a class="navbar-brand" href="?act=main" title="В главное меню"><i class="glyphicon glyphicon-home"></i></a>
+            <a class="navbar-brand" href="#">Подрядчики</a>
+            <ul class="nav navbar-nav">
+              <li>
+                  <a data-toggle="dropdown" href="?act=edirot_ks">Редакторы</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                      <li><a href="?act=editor_ks_ms">Редактор МС</a></li>
+                      <li><a href="?act=editor_ks_drs">Редактор ДРС</a></li>
+                  </ul>
+              </li>
+              <li class="active">
+                  <a data-toggle="dropdown" href="#">Каталоги</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                      <li class="active"><a href="?act=catalog_contractor">Подрядчики</a></li>
+                      <li><a href="?act=catalog_price">Расценки</a></li>
+                      <li><a href="?act=catalog_address">Адреса</a></li>
+                      <li><a href="?act=catalog_ks">Формы КС</a></li>
+                  </ul>
+              </li>
+            </ul>
+        </div>
+        <!-- -->
+        <div class="container">
+            <h1>Подрядчики</h1>
+            <div class="row">
+                <div class="col-lg-4">
+                    <p style="text-align: right;">
+                        <button class="btn btn-success" onclick="newContractor()">Создать подрядчика</button>
+                    </p>
+                    <div class="list-group" object-name="contractor-list">
+                        <a href="#" class="list-group-item" data-toggle="tab">
+                          <h4 class="list-group-item-heading">Загрузка...</h4>
+                          <p class="list-group-item-text">Пожалуйста подождите</p>
+                        </a>
+                      </div>
+                </div>
+                <div class="col-lg-6">
+                    <p style="text-align: right;">
+                        <button class="btn btn-success" object-name="btncupdate" onclick="updateContractor(this)">Редактировать</button>
+                    </p>
+                    <table class="table table-bordered">
+                        <tr><th class="col-lg-4">Название</th><td><em object-name="name"></em></td></tr>
+                        <tr><th>Сертификат соответствия ИСО:</th><td><em object-name="cciso"></em></td></tr>
+                        <tr><th>Разрешение ИСО:</th><td><em object-name="riso"></em></td></tr>
+                        <tr><th>СРО Свидетельство о допуске:</th><td><em object-name="sroca"></em></td></tr>
+                        <tr><th>СРО Свидетельство о членстве:</th><td><em object-name="srocm"></em></td></tr>
+                        <tr><th>Директор:</th><td><em object-name="director"></em></td></tr>
+                        <tr><th>Главный бухгалтер:</th><td><em object-name="accountant"></em></td></tr>
+                        <tr><th>Юридический адрес:</th><td><em object-name="legal_address"></em></td></tr>
+                        <tr><th>Фактический адрес:</th><td><em object-name="actual_address"></em></td></tr>
+                        <tr><th>Почтовый адрес:</th><td><em object-name="pastal_address"></em></td></tr>
+                        <tr><th>ИНН:</th><td><em object-name="inn"></em></td></tr>
+                        <tr><th>КПП:</th><td><em object-name="kpp"></em></td></tr>
+                        <tr><th>ОГРН:</th><td><em object-name="ogrn"></em></td></tr>
+                        <tr><th>ОКПО:</th><td><em object-name="okpo"></em></td></tr>
+                        <tr><th>ОКВЭД:</th><td><em object-name="okvd"></em></td></tr>
+                        <tr><th>Р/с:</th><td><em object-name="r_s"></em></td></tr>
+                        <tr><th>в:</th><td><em object-name="in"></em></td></tr>
+                        <tr><th>К/с:</th><td><em object-name="k_s"></em></td></tr>
+                        <tr><th>БИК:</th><td><em object-name="bik"></em></td></tr>
+                        <tr><th>Телефон:</th><td><em object-name="phone"></em></td></tr>
+                        <tr><th>Факс:</th><td><em object-name="fax"></em></td></tr>
+                        <tr><th>E-mail:</th><td><em object-name="mail"></em></td></tr>
+                    </table>
+                    <p style="text-align: right;">
+                        <button class="btn btn-danger" object-name="btncdelete" onclick="deleteContractor(this)">Удалить подрядчика</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- -->
+        <div class="modal fade" id="modal_new_contract">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Новый подрядчик</h4>
+      </div>
+      <div class="modal-body">
+          <!-- -->
+          <form class="form-horizontal" object-name="newContractorForm">
+            <div class="form-group">
+              <label for="inputName" class="col-lg-5 control-label" style="text-align: left;">Название</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputName" name="name" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputCciso" class="col-lg-5 control-label" style="text-align: left;">Сертификат соответствия ИСО:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputCciso" name="cciso" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputriso" class="col-lg-5 control-label" style="text-align: left;">Разрешение ИСО:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputriso" name="riso" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputsroca" class="col-lg-5 control-label" style="text-align: left;">СРО Свидетельство о допуске:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputsroca" name="sroca" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputsrocm" class="col-lg-5 control-label" style="text-align: left;">СРО Свидетельство о членстве:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputsrocm" name="srocm" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputdirector" class="col-lg-5 control-label" style="text-align: left;">Директор:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputdirector" name="director" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputaccountant" class="col-lg-5 control-label" style="text-align: left;">Главный бухгалтер:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputaccountant" name="accountant" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputlegal_address" class="col-lg-5 control-label" style="text-align: left;">Юридический адрес:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputlegal_address" name="legal_address" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputactual_address" class="col-lg-5 control-label" style="text-align: left;">Фактический адрес:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputactual_address" name="actual_address" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputpastal_address" class="col-lg-5 control-label" style="text-align: left;">Почтовый адрес:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputpastal_address" name="pastal_address" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputinn" class="col-lg-5 control-label" style="text-align: left;">ИНН:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputinn" name="inn" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputkpp" class="col-lg-5 control-label" style="text-align: left;">КПП:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputkpp" name="kpp" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputogrn" class="col-lg-5 control-label" style="text-align: left;">ОГРН:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputogrn" name="ogrn" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputokpo" class="col-lg-5 control-label" style="text-align: left;">ОКПО:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputokpo" name="okpo" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputokvd" class="col-lg-5 control-label" style="text-align: left;">ОКВЭД:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputokvd" name="okvd" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputr_s" class="col-lg-5 control-label" style="text-align: left;">Р/с:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputr_s" name="r_s" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputin" class="col-lg-5 control-label" style="text-align: left;">в:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputin" name="in" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputk_s" class="col-lg-5 control-label" style="text-align: left;">К/с:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputk_s" name="k_s" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputbik" class="col-lg-5 control-label" style="text-align: left;">БИК:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputbik" name="bik" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputphone" class="col-lg-5 control-label" style="text-align: left;">Телефон:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputphone" name="phone" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputfax" class="col-lg-5 control-label" style="text-align: left;">Факс:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputfax" name="fax" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputmail" class="col-lg-5 control-label" style="text-align: left;">E-mail:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputmail" name="mail" placeholder="">
+              </div>
+            </div>
+              
+          </form>
+          <!-- -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+        <button type="button" class="btn btn-primary" onclick="saveNewContractor()">Создать</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+        <!-- -->
+        <div class="modal fade" id="modal_update_contract">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Новый подрядчик</h4>
+      </div>
+      <div class="modal-body">
+          <!-- -->
+          <form class="form-horizontal" object-name="updateContractorForm">
+              <input type="hidden" name="id">
+            <div class="form-group">
+              <label for="inputName" class="col-lg-5 control-label" style="text-align: left;">Название</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputName" name="name" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputCciso" class="col-lg-5 control-label" style="text-align: left;">Сертификат соответствия ИСО:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputCciso" name="cciso" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputriso" class="col-lg-5 control-label" style="text-align: left;">Разрешение ИСО:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputriso" name="riso" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputsroca" class="col-lg-5 control-label" style="text-align: left;">СРО Свидетельство о допуске:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputsroca" name="sroca" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputsrocm" class="col-lg-5 control-label" style="text-align: left;">СРО Свидетельство о членстве:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputsrocm" name="srocm" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputdirector" class="col-lg-5 control-label" style="text-align: left;">Директор:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputdirector" name="director" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputaccountant" class="col-lg-5 control-label" style="text-align: left;">Главный бухгалтер:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputaccountant" name="accountant" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputlegal_address" class="col-lg-5 control-label" style="text-align: left;">Юридический адрес:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputlegal_address" name="legal_address" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputactual_address" class="col-lg-5 control-label" style="text-align: left;">Фактический адрес:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputactual_address" name="actual_address" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputpastal_address" class="col-lg-5 control-label" style="text-align: left;">Почтовый адрес:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputpastal_address" name="pastal_address" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputinn" class="col-lg-5 control-label" style="text-align: left;">ИНН:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputinn" name="inn" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputkpp" class="col-lg-5 control-label" style="text-align: left;">КПП:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputkpp" name="kpp" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputogrn" class="col-lg-5 control-label" style="text-align: left;">ОГРН:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputogrn" name="ogrn" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputokpo" class="col-lg-5 control-label" style="text-align: left;">ОКПО:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputokpo" name="okpo" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputokvd" class="col-lg-5 control-label" style="text-align: left;">ОКВЭД:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputokvd" name="okvd" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputr_s" class="col-lg-5 control-label" style="text-align: left;">Р/с:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputr_s" name="r_s" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputin" class="col-lg-5 control-label" style="text-align: left;">в:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputin" name="in" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputk_s" class="col-lg-5 control-label" style="text-align: left;">К/с:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputk_s" name="k_s" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputbik" class="col-lg-5 control-label" style="text-align: left;">БИК:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputbik" name="bik" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputphone" class="col-lg-5 control-label" style="text-align: left;">Телефон:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputphone" name="phone" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputfax" class="col-lg-5 control-label" style="text-align: left;">Факс:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputfax" name="fax" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputmail" class="col-lg-5 control-label" style="text-align: left;">E-mail:</label>
+              <div class="col-lg-7">
+                <input type="text" class="form-control" id="inputmail" name="mail" placeholder="">
+              </div>
+            </div>
+              
+          </form>
+          <!-- -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+        <button type="button" class="btn btn-primary" onclick="saveUpdateContractor()">Сохранить изменения</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+    </body>
+</html>

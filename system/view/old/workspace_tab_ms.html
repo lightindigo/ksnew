@@ -1,0 +1,128 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Заказчик</th>
+            <th>Подрядчик</th>
+        </tr>
+    </thead>
+    <tbody>
+       <tr>
+            <td><select class="span5" data-object-id="customer"></select></td>
+            <td><select class="span5" data-object-id="contractor"></select></td>
+        </tr>
+    </tbody>
+</table>
+<table class="table">
+    <thead>
+        <tr>
+            <th class="span2">№ Договора</th>
+            <th class="span2">№ Документа</th>
+            <th>Начало работ</th>
+            <th>Окончание работ</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><select data-object-id="{item}_contract"></select></td>
+            <td><input type="text" data-object-id="{item}_ndoc" /></td>
+            <td class="span1"><input type="date" data-object-id="{item}_date_start"/></td>
+            <td class="span1"><input type="date" data-object-id="{item}_date_stop"/></td>
+        </tr>
+    </tbody>
+ </table>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Наименование работ</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="span10"><input type="text" class="span7" value="Строительство МС по расценкам 2012 года" data-object-id="{item}_work_name"/></td>                    
+        </tr>
+    </tbody>
+</table>
+<p>
+        <strong>АТС:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> <select data-object-id="ats" id="{item}_ats"></select><br />
+        <strong>Кластер:&nbsp;</strong> <select data-object-id="cluster"  id="{item}_cluster"></select><br />
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th rowspan="2" width="10" style="vertical-align: top;"><nobr>№№</nobr> поз.</th>
+            <th rowspan="2" style="vertical-align: top;">Наименование работ</th>
+            <th rowspan="2" width="20" style="vertical-align: top;">Номер Единичной расценки</th>
+            <th rowspan="2" width="30" style="vertical-align: top;">Еденица измерения</th>
+            <th colspan="3" style="text-align: center;">Выполнено работ</th>
+            <th width="15" rowspan="2" style="vertical-align: middle;"><button class="btn" data-toggle="recalc_table" style="height: 80px;"><i class="icon-refresh"></i></button></th>
+        </tr>
+        <tr>
+            <th width="20" style="vertical-align: middle;">Количество</th>
+            <th width="20"><nobr>Цена за</nobr> <nobr>ед., руб.</nobr></th>
+            <th width="20">Стоимость, руб.</th>
+        </tr>
+    </thead>
+    <tbody data-object-id="{item}_ks_content">
+    </tbody>
+</table>
+<p>
+        <strong>Адрес:&nbsp;&nbsp;&nbsp;&nbsp;</strong> <select data-object-id="address" id="{item}_address"></select>&nbsp;
+        <button class="btn btn-info" style="margin-top: -10px;" data-toggle="use_address">Использовать данный дарес</button>&nbsp;&nbsp;&nbsp;<strong id="current_ms_address"></strong>
+</p>
+<div class="accordion" id="accordion_{item}_compensation">
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse_compensation"><i class="icon-plus"></i>Компенсация</a>
+        </div>
+        <div id="collapse_compensation" class="accordion-body collapse">
+            <div class="accordion-inner">
+                <table class="table table-bordered">
+                    <p><button class="btn btn-info" onclick="calcCompensation()">Расчитать компенсацию</button></p>
+                    <thead>
+                        <tr>
+                            <th>Адрес</th>
+                            <th>Наименование</th>
+                            <th>Объем</th>
+                            <th>Сумма компенсации</th>
+                        </tr>
+                    </thead>
+                    <tbody data-object-id="compensation_content">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="accordion" id="accordion_{item}">
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse_{item}"><i class="icon-plus"></i> Новая запись</a>
+        </div>
+        <div id="collapse_{item}" class="accordion-body collapse">
+            <div class="accordion-inner">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ul class="nav nav-list" data-object-id="{item}_work_list_1"></ul>
+                            </td>
+                            <td>
+                                <ul class="nav nav-list" data-object-id="{item}_work_list_2"></ul>
+                            </td>
+                            <td>
+                                <ul class="nav nav-list" data-object-id="{item}_work_list_3"></ul>
+                            </td>
+                            <td>
+                                <ul class="nav nav-list" data-object-id="{item}_work_list_4"></ul>
+                            </td>
+                        </tr>
+                        <tr  style="display: none;">
+                            <td colspan="4"><button class="btn btn-large btn-block btn-primary" data-id="ks2_drs" type="button" id="append_btn" disabled>Добавить запись</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<p><button class="btn btn-success" data-toggle="mk_ks_{item}" onclick="saveMs()">Сформировать КС-2/КС-3</button></p>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+         <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+         <link rel="stylesheet" href="assets/css/bootstrap-glyphicons.css" />
+         <script src="assets/js/jquery.js"></script>
+         <script src="assets/js/bootstrap.js"></script>
+         <script src="assets/js/catalog_ks.js"></script>
+         <style>
+             body { padding-top: 70px; }
+         </style>
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top">
+            <a class="navbar-brand" href="?act=main" title="В главное меню"><i class="glyphicon glyphicon-home"></i></a>
+            <a class="navbar-brand" href="#">Формы КС</a>
+            <ul class="nav navbar-nav">
+              <li>
+                  <a data-toggle="dropdown" href="?act=edirot_ks">Редакторы</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                      <li><a href="?act=editor_ks_ms">Редактор МС</a></li>
+                      <li><a href="?act=editor_ks_drs">Редактор ДРС</a></li>
+                  </ul>
+              </li>
+              <li class="active">
+                  <a data-toggle="dropdown" href="#">Каталоги</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                      <li><a href="?act=catalog_contractor">Подрядчики</a></li>
+                      <li><a href="?act=catalog_price">Расценки</a></li>
+                      <li><a href="?act=catalog_address">Адреса</a></li>
+                      <li  class="active"><a href="?act=catalog_ks">Формы КС</a></li>
+                  </ul>
+              </li>
+            </ul>
+        </div>
+        <!-- -->
+        <div class="container">
+            <h1>Формы КС</h1>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="input-group">
+                        <span class="input-group-addon">АТС&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <select class="form-control" object-name="ats">
+                                <option value="0">Не выбран</option>
+                             </select>
+                     </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="input-group">
+                        <span class="input-group-addon">Кластер&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <select class="form-control" object-name="cluster">
+                                <option value="0">Не выбран</option>
+                             </select>
+                     </div>
+                </div>
+            </div><br />
+            <div class="row">
+                <div class="col-lg-5">
+                    <a href="#drs" class="btn btn-info" onclick="getKsDrsList('drs')">Загрузить КС ДРС</a>
+                    <a href="#" class="btn btn-info" onclick="getKsDrsList('ms')">Загрузить КС МС</a>
+                </div>
+            </div><br/>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="list-group" object-name="ks-list">
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <address>
+                                <h3 object-name="project"></h3>
+                                <strong>Заказчик: </strong><em object-name="customer"></em><br />
+                                <strong>Подрядчик: </strong><em object-name="contractor"></em><br />
+                                <strong>№ Договора: </strong><em object-name="contract"></em><br />
+                                <strong>№ Документа: </strong><em object-name="doc_n"></em><br />
+                                <strong>Дата начала - окончания работ: </strong><em object-name="date_a"></em> - <em object-name="date_b"></em><br />
+                                <strong>Название работ: </strong><em object-name="wname"></em><br />
+                            </address>
+                        </div>
+                        <div class="col-lg-6" object-name="ks_download">
+                            
+                        </div>
+                    </div>
+                    <div class="loc-lg-12" object-name="works"></div>
+                    <div class="loc-lg-12" object-name="material"></div>
+                    <div class="loc-lg-12" object-name="compens"></div>
+                </div>
+            </div>
+        </div>
+        <!-- -->
+    </body>
+</html>

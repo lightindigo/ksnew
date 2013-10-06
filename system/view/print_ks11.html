@@ -1,0 +1,855 @@
+<html>
+<head>
+    <title></title>
+    <style>
+        body
+        {
+            width: 21.0cm;
+            font-size: 10.5pt;
+        }
+        table
+        {
+            font-size: 10.5pt;
+        }
+        .head_gost
+        {
+            float:right;
+            font-size: 9pt;
+        }
+        .head_capt
+        {
+            text-align: center;
+            height:20px;
+            width:100%;
+            font-size:12pt;
+        }
+        .after_float
+        {
+            clear:both;
+        }
+
+        .head_org
+        {
+
+        }
+        .border1
+        {
+            border:1px solid black;
+            vertical-align:bottom;
+            text-align: center;
+            height:20px
+        }
+        .border2
+        {
+            border-left:1px solid black;
+            border-right:1px solid black;
+        }
+        .noborder
+        {
+            vertical-align: bottom
+        }
+        .underline_cell
+        {
+            border-bottom:1px solid black;
+            vertical-align: bottom;
+        }
+        td
+        {
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+<div class = "head_gost">
+    Типовая межотраслевая форма № КС- 11 <br>
+    Утверждена постановлением Госкомстата России <br>
+    от 30.10.97 № 71а</div>
+<div class = "after_float"></div>
+<div class = "head_capt">
+    <strong>
+        АКТ №_________<br>
+        приемки законченного строительством объекта <br>
+    </strong>
+    "_______"   ______________   ________ год
+</div>
+<br><br><br>
+
+<table width="100%" cellspacing = "0">
+    <tr>
+        <td></td>
+        <td class = "underline_cell" rowspan = "4">{customer_name}</td>
+        <td></td>
+        <td width = "130px" class = "border1" >Код</td>
+    </tr>
+    <tr>
+        <td></td>
+
+        <td class = "noborder" style = "text-align: right" width = "130px">Форма по ОКУД&nbsp</td>
+        <td class = "border1">0322003</td>
+    </tr>
+    <tr>
+        <td></td>
+
+        <td style = "text-align: right">Дата составления&nbsp</td>
+        <td class = "border1">{date_stop}</td>
+    </tr>
+    <tr>
+        <td class = "noborder" width = "100px">Организация</td>
+
+        <td style = "text-align: right">по ОКПО&nbsp</td>
+        <td class = "border1">{customer_okpo}</td>
+    </tr>
+</table>
+<br>
+<table cellspacing = "0" style = "float: right;">
+    <tr>
+        <td class = "border1" rowspan = "2" style = "vertical-align: middle;width:70px">Код вида операции</td>
+        <td class = "border1" colspan = "4">Код</td>
+    </tr>
+    <tr>
+
+        <td class = "border1" style = "vertical-align: middle;width:60px">строительной организации</td>
+        <td class = "border1" style = "vertical-align: middle;width:60px">участка</td>
+        <td class = "border1" style = "vertical-align: middle;width:60px">объекта</td>
+        <td class = "border1" style = "vertical-align: middle;width:60px"></td>
+    </tr>
+    <tr>
+        <td class = "border1" style = "height:20px"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+</table>
+
+<div class = "after_float"></div>
+<br>
+
+
+
+
+<table width = "100%">
+    <tr>
+        <td width = "95px">Заказчик в лице</td>
+        <td class = "underline_cell">{customer_director}</td>
+        <td width = "235px">, с одной стороны и исполнитель работ</td>
+    </tr>
+    <tr style = "font-size:7pt">
+        <td></td>
+        <td style = "text-align: center; vertical-align: top; ">(должность, фамилия, имя, отчество)</td>
+        <td></td>
+    </tr>
+</table>
+
+<table width = "100%">
+    <tr>
+        <td width = "265px">(генеральный подрядчик, подрядчик) в лице</td>
+        <td class = "underline_cell">{contractor_director}</td>
+        <td width = "115px">с другой стороны,</td>
+    </tr>
+    <tr style = "font-size:7pt">
+        <td></td>
+        <td style = "text-align: center; vertical-align: top; ">(должность, фамилия, имя, отчество)</td>
+        <td></td>
+    </tr>
+</table>
+<p style = "margin-top: 0px;margin-bottom: 0px;">руководствуясь Временным положением о приемке законченных строительством объектов на
+территории Российской Федерации, составили настоящий акт о нижеследующем.</p>
+<table width = "100%">
+    <tr>
+        <td width = "335px">1. Исполнителем работ предъявлен заказчику к приемке</td>
+        <td class = "underline_cell"></td>
+    </tr>
+    <tr style = "font-size:7pt">
+        <td></td>
+        <td style = "text-align: center; vertical-align: top; ">(наименование объекта и вид строительства)</td>
+    </tr>
+</table>
+
+<table width = "100%">
+    <tr height = "10px">
+        <td class = "underline_cell"> {work_name} </td>
+    </tr>
+</table>
+
+<table width = "100%">
+    <tr>
+        <td width = "160px">расположенные по адресу</td>
+        <td class = "underline_cell"> {address}</td>
+    </tr>
+</table>
+
+<table width = "100%">
+    <tr height = "20px">
+        <td class = "underline_cell"> </td>
+    </tr>
+</table>
+
+<table width = "100%">
+    <tr >
+        <td width = "555px">2. Строительство производилось в соответствии с разрешением
+            на строительство, выданным</td>
+        <td class = "underline_cell"></td>
+    </tr>
+</table>
+
+<table width = "100%">
+    <tr height = "20px">
+        <td class = "underline_cell"></td>
+    </tr>
+    <tr style = "font-size:7pt">
+        <td style = "text-align: center; vertical-align: top; ">(наименование органа, выдавшего разрешение)
+        </td>
+    </tr>
+</table>
+
+<table width = "100%">
+    <tr height>
+        <td width = "230px">3. В строительстве принимали участие</td>
+        <td class = "underline_cell">{contractor_name} </td>
+    </tr>
+</table>
+
+<table width = "100%">
+    <tr height = "20px">
+        <td class = "underline_cell">{contractor_actual_address}</td>
+    </tr>
+    <tr style = "font-size:7pt">
+        <td style = "text-align: center; vertical-align: top; ">(наименование субподрядных организаций,
+            их реквизиты, виды
+            работ, выполнявшихся каждой из них)
+        </td>
+    </tr>
+</table>
+
+<table width = "100%">
+    <tr >
+        <td width = "580px">4. Проектно-сметная документация на строительство разработана
+            генеральным проектировщиком</td>
+        <td class = "underline_cell"></td>
+    </tr>
+</table>
+
+<table width = "100%">
+    <tr height = "20px">
+        <td class = "underline_cell"></td>
+    </tr>
+    <tr style = "font-size:7pt">
+        <td style = "text-align: center; vertical-align: top; ">(наименование
+            организации и ее реквизиты)
+    </td>
+    </tr>
+</table>
+
+<table width = "100%">
+    <tr>
+        <td width = "90px">выполнившим</td>
+        <td class = "underline_cell"></td>
+    </tr>
+    <tr style = "font-size:7pt">
+        <td></td>
+        <td style = "text-align: center; vertical-align: top; ">(наименование частей или разделов документации)</td>
+    </tr>
+</table>
+
+<table width = "100%">
+    <tr>
+        <td width = "200px">и субподрядными организациями</td>
+        <td class = "underline_cell"></td>
+    </tr>
+    <tr style = "font-size:7pt">
+        <td></td>
+        <td style = "text-align: center; vertical-align: top; ">(наименование организаций,
+            их реквизиты и выполненные части и
+        </td>
+    </tr>
+</table>
+
+<table width = "100%">
+    <tr height = "20px">
+        <td class = "underline_cell"></td>
+    </tr>
+    <tr style = "font-size:7pt">
+        <td style = "text-align: center; vertical-align: top; ">разделы документации
+            (перечень организаций может указываться в приложении)
+        </td>
+    </tr>
+</table>
+
+<table width = "100%">
+    <tr height = "10px">
+        <td class = "underline_cell"></td>
+    </tr>
+</table>
+
+<table width = "100%">
+    <tr>
+        <td width = "290px">5. Исходные данные для проектирования выданы</td>
+        <td class = "underline_cell"></td>
+    </tr>
+    <tr style = "font-size:7pt">
+        <td></td>
+        <td style = "text-align: center; vertical-align: top; ">(наименование научно-исследовательских, изыскательских)</td>
+    </tr>
+</table>
+
+<table width = "100%">
+    <tr height = "20px">
+        <td class = "underline_cell"></td>
+    </tr>
+    <tr style = "font-size:7pt">
+        <td style = "text-align: center; vertical-align: top; ">и других организаций, их реквизиты
+            (перечень организаций может указываться в приложении)
+        </td>
+    </tr>
+</table>
+
+<table width = "100%">
+    <tr height = "10px">
+        <td class = "underline_cell"></td>
+    </tr>
+</table>
+
+<table width = "100%">
+    <tr>
+        <td width = "280px">6. Проектно-сметная документация утверждена</td>
+        <td class = "underline_cell"></td>
+    </tr>
+    <tr style = "font-size:7pt">
+        <td></td>
+        <td style = "text-align: center; vertical-align: top; ">(наименование органа, утвердившего (переутвердившего)</td>
+    </tr>
+</table>
+
+<table width = "100%">
+    <tr height = "20px">
+        <td class = "underline_cell"></td>
+    </tr>
+    <tr style = "font-size:7pt">
+        <td style = "text-align: center; vertical-align: top; ">проектно-сметную документацию на о
+            бъект (очередь, пусковой комплекс))
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td>"</td>
+        <td class = "underline_cell" width = "20px"></td>
+        <td>"</td>
+        <td class = "underline_cell" width = "80px"></td>
+        <td>&nbsp</td>
+        <td class = "underline_cell" width = "50px"></td>
+        <td>год &nbsp&nbsp&nbsp№</td>
+        <td class = "underline_cell" width = "100px"></td>
+    </tr>
+</table>
+<p style = "margin-top: 0px;margin-bottom: 0px;">7. Строительно-монтажные работы осуществлены в сроки:</p>
+
+<table>
+    <tr height = "20px">
+        <td>Начало работ </td>
+        <td class = "underline_cell" width = "200px"></td>
+    </tr>
+    <tr style = "font-size:6pt">
+        <td></td>
+        <td style = "text-align: center; vertical-align: top; ">(месяц, год)
+        </td>
+    </tr>
+    <tr height = "20px">
+        <td>Окончание работ </td>
+        <td class = "underline_cell"></td>
+    </tr>
+    <tr style = "font-size:6pt">
+        <td></td>
+        <td style = "text-align: center; vertical-align: top; ">(месяц, год)
+        </td>
+    </tr>
+</table>
+<p>8. <strong>Вариант А</strong> (для всех объектов, кроме жилых домов)</p>
+<table width = "100%">
+    <tr>
+        <td width = "280px">Предъявленный исполнителем работ к приемке</td>
+        <td class = "underline_cell"></td>
+    </tr>
+    <tr style = "font-size:7pt">
+        <td></td>
+        <td style = "text-align: center; vertical-align: top; ">(наименование объекта)
+        </td>
+    </tr>
+</table>
+<p>имеет следующие основные показатели мощности, производительности., производственной площади, протяженности,
+    вместимости, объему, пропускной способности, провозной способности, число рабочих мест и т.п.</p>
+
+<table width = "100%" cellspacing = "0">
+    <tr>
+        <td class = "border1" rowspan = "2" style = "vertical-align: middle;width:200px">Показатель
+            (мощность, производительность и т.п.)
+        </td>
+        <td class = "border1" rowspan = "2" style = "vertical-align: middle;width:100px">Единица измерения</td>
+        <td class = "border1" colspan = "2">По проекту</td>
+        <td class = "border1" colspan = "2">Фактически</td>
+    </tr>
+    <tr>
+
+        <td class = "border1" style = "vertical-align: middle;width:100px">общая с учетом ранее принятых</td>
+        <td class = "border1" style = "vertical-align: middle;width:100px">в том числе
+            пускового
+            комплекса
+            или очереди
+        </td>
+        <td class = "border1" style = "vertical-align: middle;width:100px">общая с учетом ранее принятых</td>
+        <td class = "border1" style = "vertical-align: middle;width:100px">в том числе
+            пускового
+            комплекса
+            или очереди
+        </td>
+    </tr>
+    <tr>
+        <td class = "border1">1</td>
+        <td class = "border1">2</td>
+        <td class = "border1">3</td>
+        <td class = "border1">4</td>
+        <td class = "border1">5</td>
+        <td class = "border1">6</td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+</table>
+
+<p>&nbsp&nbsp<strong>Вариант Б.</strong> (для жилых домов)<br>
+    Предъявленный к приемке жилой дом имеет следующие показатели:
+</p>
+
+<table width = "100%" cellspacing = "0">
+    <tr>
+        <td class = "border1">Показатель</td>
+        <td class = "border1" width = "180px">Единица измерения</td>
+        <td class = "border1" width = "180px">По проекту</td>
+        <td class = "border1" width = "180px">Фактически</td>
+    </tr>
+    <tr>
+        <td class = "border1">1</td>
+        <td class = "border1">2</td>
+        <td class = "border1">3</td>
+        <td class = "border1">4</td>
+    </tr>
+    <tr>
+        <td class = "border2" style = "text-align: left">Общая (площадь здания)</td>
+        <td class = "border2">м<sup>2</sup></td>
+        <td class = "border2"></td>
+        <td class = "border2"></td>
+    </tr>
+    <tr>
+        <td class = "border2" style = "text-align: left">Количество этажей</td>
+        <td class = "border2">этаж</td>
+        <td class = "border2"></td>
+        <td class = "border2"></td>
+    </tr>
+    <tr>
+        <td class = "border2" style = "text-align: left">Общий строительный объем</td>
+        <td class = "border2">м<sup>3</sup></td>
+        <td class = "border2"></td>
+        <td class = "border2"></td>
+    </tr>
+    <tr>
+        <td class = "border2">в том числе подземной части</td>
+        <td class = "border2">м<sup>3</sup></td>
+        <td class = "border2"></td>
+        <td class = "border2"></td>
+    </tr>
+    <tr>
+        <td class = "border2" style = "text-align: left">Площадь встроенных, встроенно-пристроенных
+            и пристроенных помещений</td>
+        <td class = "border2">м<sup>2</sup></td>
+        <td class = "border2"></td>
+        <td class = "border2"></td>
+    </tr>
+    <tr>
+        <td class = "border2" style = "text-align: left">Всего квартир</td>
+        <td class = "border2">шт.</td>
+        <td class = "border2"></td>
+        <td class = "border2"></td>
+    </tr>
+    <tr>
+        <td class = "border2">общая площадь</td>
+        <td class = "border2">м<sup>2</sup></td>
+        <td class = "border2"></td>
+        <td class = "border2"></td>
+    </tr>
+    <tr>
+        <td class = "border2">жилая площадь</td>
+        <td class = "border2">м<sup>2</sup></td>
+        <td class = "border2"></td>
+        <td class = "border2"></td>
+    </tr>
+    <tr>
+        <td class = "border2" style = "text-align: left">в том числе:</td>
+        <td class = "border2"></td>
+        <td class = "border2"></td>
+        <td class = "border2"></td>
+    </tr>
+    <tr>
+        <td class = "border2" style = "text-align: left">Однокомнатных</td>
+        <td class = "border2">шт.</td>
+        <td class = "border2"></td>
+        <td class = "border2"></td>
+    </tr>
+    <tr>
+        <td class = "border2">общая площадь</td>
+        <td class = "border2">м<sup>2</sup></td>
+        <td class = "border2"></td>
+        <td class = "border2"></td>
+    </tr>
+    <tr>
+        <td class = "border2">жилая площадь</td>
+        <td class = "border2">м<sup>2</sup></td>
+        <td class = "border2"></td>
+        <td class = "border2"></td>
+    </tr>
+    <tr>
+        <td class = "border2" style = "text-align: left">Двухкомнатных</td>
+        <td class = "border2">шт.</td>
+        <td class = "border2"></td>
+        <td class = "border2"></td>
+    </tr>
+    <tr>
+        <td class = "border2">общая площадь</td>
+        <td class = "border2">м<sup>2</sup></td>
+        <td class = "border2"></td>
+        <td class = "border2"></td>
+    </tr>
+    <tr>
+        <td class = "border2">жилая площадь</td>
+        <td class = "border2">м<sup>2</sup></td>
+        <td class = "border2"></td>
+        <td class = "border2"></td>
+    </tr>
+    <tr>
+        <td class = "border2" style = "text-align: left">Трехкомнатных</td>
+        <td class = "border2">шт.</td>
+        <td class = "border2"></td>
+        <td class = "border2"></td>
+    </tr>
+    <tr>
+        <td class = "border2">общая площадь</td>
+        <td class = "border2">м<sup>2</sup></td>
+        <td class = "border2"></td>
+        <td class = "border2"></td>
+    </tr>
+    <tr>
+        <td class = "border2">жилая площадь</td>
+        <td class = "border2">м<sup>2</sup></td>
+        <td class = "border2"></td>
+        <td class = "border2"></td>
+    </tr>
+    <tr>
+        <td class = "border2" style = "text-align: left">четырех- и более комнатных</td>
+        <td class = "border2">шт.</td>
+        <td class = "border2"></td>
+        <td class = "border2"></td>
+    </tr>
+    <tr>
+        <td class = "border2">общая площадь</td>
+        <td class = "border2">м<sup>2</sup></td>
+        <td class = "border2"></td>
+        <td class = "border2"></td>
+    </tr>
+    <tr>
+        <td class = "border2" style = "border-bottom: 1px solid black">жилая площадь</td>
+        <td class = "border2" style = "border-bottom: 1px solid black">м<sup>2</sup></td>
+        <td class = "border2" style = "border-bottom: 1px solid black"></td>
+        <td class = "border2" style = "border-bottom: 1px solid black"></td>
+    </tr>
+</table>
+<p width = "100%" align = "justify">
+    9. На объекте установлено предусмотренное проектом оборудование в количестве согласно актам о его приемке после индивидуального испытания и комплексного опробования (перечень указанных актов приведен в приложении_______________).<br>
+    10. Внешние наружные коммуникации холодного и горячего водоснабжения, канализации, теплоснабжения, газоснабжения, энергоснабжения и связи обеспечивают нормальную эксплуатацию объекта и приняты пользо-вателями – городскими эксплуатационными организациями (перечень справок пользователей городских экс-плуатационных организаций приведен в приложении____________________	).<br>
+    11. Работы по озеленению, устройству верхнего покрытия подъездных дорог к зданию, тротуаров, хозяйствен-
+    ных, игровых и спортивных площадок, а также отделке элементов фасадов зданий должны быть выполнены
+    (при переносе сроков выполнения работ):
+</p>
+<table width = "100%" cellspacing = "0">
+    <tr>
+        <td class = "border1" width = "200px">Работы</td>
+        <td class = "border1">Единица измерения</td>
+        <td class = "border1">Объем работ</td>
+        <td class = "border1">Срок выполнения</td>
+    </tr>
+    <tr>
+        <td class = "border1">1</td>
+        <td class = "border1">2</td>
+        <td class = "border1">3</td>
+        <td class = "border1">4</td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+    <tr>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+        <td class = "border1"></td>
+    </tr>
+</table>
+
+<p>12. Стоимость объекта по утвержденной проектно-сметной документации</p>
+
+<table width = "100%">
+    <tr>
+        <td style = "text-align: left" width = "50px">Всего</td>
+        <td class = "underline_cell"></td>
+        <td width = "30px">руб.</td>
+        <td class = "underline_cell"></td>
+        <td width = "30px">коп</td>
+    </tr>
+    <tr>
+        <td style = "text-align: left" width = "335px" colspan = "5">в том числе:</td>
+    </tr>
+    <tr>
+        <td style = "text-align: left" width = "335px">стоимость строительно-монтажных работ</td>
+        <td class = "underline_cell"></td>
+        <td>руб.</td>
+        <td class = "underline_cell"></td>
+        <td>коп</td>
+    </tr>
+    <tr>
+        <td style = "text-align: left" width = "335px">стоимость оборудования, инструмента и инвентаря</td>
+        <td class = "underline_cell"></td>
+        <td>руб.</td>
+        <td class = "underline_cell"></td>
+        <td>коп</td>
+    </tr>
+    <tr>
+        <td style = "text-align: left" width = "335px">13. Стоимость принимаемых основных фондов</td>
+        <td class = "underline_cell"></td>
+        <td>руб.</td>
+        <td class = "underline_cell"></td>
+        <td>коп</td>
+    </tr>
+    <tr>
+        <td style = "text-align: left" width = "335px" colspan = "5">в том числе:</td>
+    </tr>
+    <tr>
+        <td style = "text-align: left" width = "335px">стоимость строительно-монтажных работ</td>
+        <td class = "underline_cell"></td>
+        <td>руб.</td>
+        <td class = "underline_cell"></td>
+        <td>коп</td>
+    </tr>
+    <tr>
+        <td style = "text-align: left" width = "335px">стоимость оборудования, инструмента и инвентаря</td>
+        <td class = "underline_cell"></td>
+        <td>руб.</td>
+        <td class = "underline_cell"></td>
+        <td>коп</td>
+    </tr>
+    <tr>
+        <td style = "text-align: left" width = "335px">1. Исполнителем работ предъявлен заказчику к приемке</td>
+        <td class = "underline_cell"></td>
+        <td>руб.</td>
+        <td class = "underline_cell"></td>
+        <td>коп</td>
+    </tr>
+</table>
+<p>
+    14. Неотъемлемой составной частью настоящего акта является документация, перечень которой приведен
+    в приложении______________________(в соответствии с приложением 2 Временного положения).<br>
+    15. Дополнительные условия________________________________________________________________________________________
+    пункт заполняется при совмещении приемки с вводом объекта в действие, приемке “под ключ”, при частичном вводе в действие или приемке,
+    в случае совмещения функций заказчика и исполнителя работ
+</p>
+<table width = "100%" >
+    <tr height = "20px">
+        <td style="text-align: left" width = "100px"><strong>Объект сдал</strong></td>
+        <td width class = "underline_cell"></td>
+        <td class = "underline_cell"></td>
+        <td class = "underline_cell"></td>
+    </tr>
+    <tr style = "font-size:7pt">
+        <td></td>
+        <td style = "text-align: center; vertical-align: top; ">(должность </td>
+        <td style = "text-align: center; vertical-align: top; ">(подпись)  </td>
+        <td style = "text-align: center; vertical-align: top; ">(расшифровка подписи)   </td>
+    </tr>
+    <tr height = "20px">
+        <td style="text-align: left"><strong>Объект принял</strong></td>
+        <td class = "underline_cell"></td>
+        <td class = "underline_cell"></td>
+        <td class = "underline_cell"></td>
+    </tr>
+    <tr style = "font-size:7pt">
+        <td></td>
+        <td style = "text-align: center; vertical-align: top; ">(должность </td>
+        <td style = "text-align: center; vertical-align: top; ">(подпись)  </td>
+        <td style = "text-align: center; vertical-align: top; ">(расшифровка подписи)   </td>
+    </tr>
+</table>
+<br>
+<table width = "100%">
+    <tr>
+        <td style="text-align: left" width = "400px"><strong>Исполнитель работ</strong><br>
+            (генеральный подрядчик,
+            подрядчик)
+        </td>
+        <td style="text-align: left;vertical-align: top"><strong>Заказчик</strong></td>
+    </tr>
+</table>
+<p>
+    Примечание. В случаях, когда функции заказчика и исполнителя работ – подрядчика выполняются
+    одним лицом, состав подписей определяется инвестором.
+</p>
+</body>
+</html>
