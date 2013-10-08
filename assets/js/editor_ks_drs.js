@@ -189,7 +189,7 @@ function save_ks()
     }
     var works = '';
     var material = '';
-    var prepayment = $('input[object-name="prepayment"]').val();
+    var prepayment = parseFloat($('input[object-name="prepayment"]').val().replace(',','.')).toFixed(2);
     for(var i=1;i<=$('tbody[object-name="ks"] tr').length;i++)
     {
         works += $('tbody[object-name="ks"] tr:nth-child('+i+')').attr('item-wid')+';';

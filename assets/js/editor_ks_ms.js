@@ -263,7 +263,7 @@ function mathCompens()
 }
 function save_ms()
 {
-    var prepayment = $('input[object-name="prepayment"]').val();
+    var prepayment = parseFloat($('input[object-name="prepayment"]').val().replace(',','.')).toFixed(2);
     var date_a = $('input[object-name="date-start"]').val();
     var date_b = $('input[object-name="date-stop"]').val();
     var price  = $('select[object-name="contact-n"]').val();
@@ -478,4 +478,17 @@ function materialAddRowEdit(i)
     item += '</tr>';
     $('tbody[object-name="material"]').append(item);
     materialCalcRow(id);
+}
+
+function compensRowAdd(i)
+{
+    item = '<tr item-id="'+edit_data['compens'][i]['id']+'">';
+    item += '<td>'+($('tbody[object-name="compens"] tr').length+1)+'</td>';
+    item += '<td>'+edit_data['compens'][i]['text']+'</td>';
+    item += '<td style="text-align: center;">'+edit_data['compens'][i]['min']+'</td>';
+    item += '<td><input type="text" class="form-control" style="text-align: center;" value="'+edit_data['compens'][i]['value']+'" /></td>';
+    item += '<td><input type="text" class="form-control" style="text-align: center;" value="'+edit_data['compens'][i]['price']+'" /></td>';
+    item += '<td><input type="text" class="form-control" style="text-align: center;" value="'+edit_data['compens'][i]['retail']+'" /></td>';
+    item += '</tr>';
+    $('tbody[object-name="compens"]').append(item);
 }

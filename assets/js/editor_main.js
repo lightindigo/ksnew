@@ -35,13 +35,19 @@ function getAtsList(object)
                 {
                     addRowWorkEditDrs(i);
                 }
+
+                if(ks_type == "ms")
+                for(i = 0; i < edit_data['compens'].length;i++)
+                {
+                    compensRowAdd(i);
+                }
+
                 for(i = 0; i < edit_data['material'].length;i++)
                 {
                     if(ks_type == "drs")
                     {
                         materialAddRowEdit(i);
                     }
-
                 }
             }
             catch(exc)
