@@ -59,7 +59,7 @@ function workCalcRow(id)
     var lim = parseFloat($('tbody[object-name="ks"] tr[tr-item-id="work-'+(id)+'"]  td:nth-child(4)').html().replace(/[^0-9|.|,]/g, "").replace(',','.'));
     var value = parseFloat($('tbody[object-name="ks"] tr[tr-item-id="work-'+(id)+'"] td:nth-child(5) input').val().replace(',','.'));
      var price = parseFloat($('tbody[object-name="ks"] tr[tr-item-id="work-'+(id)+'"] td:nth-child(6) input').val().replace(',','.'));
-     var full = (value/lim) * price;
+     var full = value * price;
      $('tbody[object-name="ks"] tr[tr-item-id="work-'+(id)+'"] td:nth-child(7) input').val(full.toFixed(2));
 }
 function workDelRow(id)
